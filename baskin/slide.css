@@ -1,0 +1,87 @@
+/**
+* @filename : slide.css
+* @author : 문태호 (mun05170@gmail.com)
+* @description : 배스킨라빈스 슬라이드 영역 css
+*/
+
+button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 슬라이드 영역 기본 설정 */
+.slide_container {
+  width: 100vw;
+  height: 697px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_list {
+  left: 0;
+  height: 100%;
+  width: 500vw;
+  display: flex;
+  position: absolute;
+  transition: left 0.3s ease-in;
+}
+
+.slide {
+  height: 100%;
+  width: 100vw;
+}
+
+.slide a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* 슬라이드 화살표 버튼 레이아웃 */
+.slide_arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 109px;
+  height: 109px;
+  z-index: 3;
+}
+
+.slide_arrow.left {
+  left: 20px;
+  background-image: url("./img/btn_banner_prev.png");
+}
+.slide_arrow.right {
+  right: 20px;
+  background-image: url("./img/btn_banner_next.png");
+}
+
+/* 슬라이드 컨트롤 버튼 레이아웃 */
+.slide_ctrl {
+  position: absolute;
+  width: 150px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.slide_ctrl_btn {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+}
+
+.slide_ctrl_btn.active {
+  width: 13px;
+  height: 13px;
+  background-color: #301d17;
+}
