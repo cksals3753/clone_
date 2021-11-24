@@ -166,6 +166,9 @@
 .center {
     padding: 40px;
 }
+.sideimg {
+    display: block;
+}
 /* 커피 이미지 위치 조정 */
 .center > .nut {
     position: relative;
@@ -277,17 +280,84 @@
 }
 /* 이미지 슬라이드 */
 .slide {
+    position: relative;
+    padding-top: 50px;
+    overflow: hidden;
     width: 100%;
     text-align: center;
+  }
+/* 이미지 부분 총 width */
+.panel {
+    width: 400%;
 }
-/* 화살표 버튼 */
-.slide > a > img {
+/* float 처리 */  
+.panel:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 이미지 */
+.panel>li {
+    width: 25%;
+    height: 600px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     position: relative;
-    top: -260px;
-    padding: 10px 15px;
-    border: 2px solid #222;
-    border-radius: 50%;
+    text-align: center;
 }
+  
+/* float 처리 */
+.dot:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 슬라이드 버튼 */  
+.dot {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+  
+.dot>li {
+    float: left;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+  
+.dot>li.on {
+    background-color: #342f2f;
+}
+/* 이전 버튼 */  
+.prev {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    cursor: pointer;
+  }
+/* 다음 버튼 */
+.next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    cursor: pointer;
+  }
 /* ------------------------------------------------------------------------- */
 /* 리워드 */
 /* 리워드 배경색 및 크기 지정 */
