@@ -8,17 +8,22 @@
 .menu_bar {
   width: 100%;
   height: 46px;
-  border-top: 1px solid #000;
+  border-top: 1px solid #e2d9d6;
   border-bottom: 1px solid #000;
   position: absolute;
   overflow: hidden;
   background-color: #fff;
   z-index: 5;
-  transition: height 0.5 ease;
 }
 
-#center {
-  padding-top: 46px;
+/* 해피포인트 이미지 */
+.menu_bar_bgimg {
+  top: 90px;
+  left: 155px;
+  position: absolute;
+  width: 195px;
+  height: 139px;
+  background: url("./img/img_happypoint_app.jpg") no-repeat 0 0;
 }
 
 /* 메뉴바 콘텐츠 영역 설정 */
@@ -38,7 +43,22 @@
 }
 
 .menu_left li {
-  width: 50%;
+  width: 35%;
+}
+
+.menu_left a {
+  width: 35px;
+  height: 46px;
+  background: url("./img/gnb_menu.png") no-repeat;
+  text-indent: -9999em;
+}
+
+.menu_left li:first-child a {
+  background-position: 0px -1px;
+}
+
+.menu_left li:nth-child(2) a {
+  background-position: -97px -1px;
 }
 
 /* 메뉴바 우측 메뉴 영역 */
@@ -65,6 +85,19 @@
   height: 100%;
   text-align: center;
   line-height: 46px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dep1_link:first-child {
+  font-size: 13px;
+}
+
+.flavor_img {
+  position: absolute;
+  left: -38px;
+  top: -34px;
 }
 
 .nav_dep2_ul {
@@ -81,6 +114,7 @@
   padding: 5px 0;
   color: #7b7b7b;
   text-align: center;
+  font-size: 14px;
 }
 
 .dep2_link:hover {

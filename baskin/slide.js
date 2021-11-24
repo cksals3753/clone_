@@ -44,3 +44,13 @@ slideLeft.addEventListener("click", () => slideNumHandler(-1));
 slideRight.addEventListener("click", () => slideNumHandler(1));
 
 slideBtnHandle();
+setInterval(() => slideNumHandler(1), 3000);
+
+// 스크롤을 내리면 팝업 배너의 height = 0 으로 변환
+window.addEventListener("scroll", (e) => {
+  const scrollY = window.scrollY || document.documentElement.scrollTop;
+  const popup = document.querySelector(".popup_img");
+  if (scrollY > 185) {
+    popup.style.height = "0px";
+  }
+});
