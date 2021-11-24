@@ -16,16 +16,6 @@
   z-index: 5;
 }
 
-/* 해피포인트 이미지 */
-.menu_bar_bgimg {
-  top: 90px;
-  left: 155px;
-  position: absolute;
-  width: 195px;
-  height: 139px;
-  background: url("./img/img_happypoint_app.jpg") no-repeat 0 0;
-}
-
 /* 메뉴바 콘텐츠 영역 설정 */
 .menu_bar_area {
   height: 100%;
@@ -98,6 +88,16 @@
   position: absolute;
   left: -38px;
   top: -34px;
+}
+
+/* 해피포인트 이미지 */
+.menu_bar_bgimg {
+  top: 30px;
+  left: -244px;
+  position: absolute;
+  width: 195px;
+  height: 139px;
+  background: url("./img/img_happypoint_app.jpg") no-repeat 0 0;
 }
 
 .nav_dep2_ul {

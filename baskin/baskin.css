@@ -18,6 +18,7 @@ body {
 .ice {
   background-image: url(./img/bg_menu.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   width: 100%;
   text-align: center;
 }
