@@ -2,6 +2,7 @@
 @import url("./slide.css");
 @import url("./menu.css");
 @import url("./topbar.css");
+@import url("./event.css");
 
 html,
 body {
@@ -10,47 +11,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: "나눔고딕", "굴림";
+  letter-spacing: -0.05em;
 }
 
-/* 백그라운드 이미지 설정 */
-/* 메인 이미지 */
-#center > .img {
-  width: 100%;
-}
-/* 주문 페이지 */
-#center .event {
-  width: 100%;
-  display: block;
-  margin: auto;
-}
-#center .event > h1 {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 40px;
-}
-#center .event > ul > li {
-  width: 25%;
-  float: left;
-}
-/* 마우스 커서 */
-#center .event > ul > li:hover {
-  cursor: pointer;
-}
-/* 텍스트 처리 */
-#center .event > ul > li > p {
-  font-size: 14px;
-}
-#center .event > ul > li > .pop {
-  padding-top: 20px;
-  color: rgba(100, 100, 100, 0.8);
-}
 /* 아이스크림 메뉴 */
 .ice {
-  /* background-image: url(../img/bg_menu.jpg); */
+  background-image: url(./img/bg_menu.jpg);
   background-repeat: no-repeat;
   width: 100%;
-  margin-top: 500px;
   text-align: center;
 }
 /* 메뉴 소제목 */

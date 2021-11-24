@@ -54,3 +54,31 @@ window.addEventListener("scroll", (e) => {
     popup.style.height = "0px";
   }
 });
+
+const eventSlide = document.querySelector(".event_slide_list");
+const eventSlides = document.querySelectorAll(".event_slide");
+const eventSlideCtrlBtns = document.querySelectorAll(".event_ctrl_btn");
+
+let eventSlideNum = 0;
+
+function eventSlideChange() {
+  eventSlide.style.left = eventSlideNum * -1220 + "px";
+}
+
+function eventSlideBtnHandler() {
+  for (let btn of eventSlideCtrlBtns) {
+    btn.classList = "event_ctrl_btn";
+  }
+  document
+    .querySelector(".event_ctrl_btn:nth-child(" + (eventSlideNum + 1) + ")")
+    .classList.add("active");
+  eventSlideChange();
+}
+
+for (let btn of eventSlideCtrlBtns) {
+  btn.addEventListener("click", (e) => {
+    console.log(parseInt(e.currentTarget.dataset.page));
+    eventSlideNum = parseInt(e.currentTarget.dataset.page);
+    eventSlideBtnHandler();
+  });
+}
