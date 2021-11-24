@@ -1,0 +1,38 @@
+/**
+ * @filename : store.js
+ * @author : 문태호 (mun05170@gmail.com)
+ * @description : 배스킨라빈스 스토어 영역 레이아웃
+ */
+
+.store_container {
+  width: 100%;
+  height: 540px;
+}
+
+.store_area {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.store_header {
+  width: 100%;
+  padding-top: 93px;
+  margin-bottom: 57px;
+  display: flex;
+  align-items: center;
+}
+
+.store_title {
+  width: 50%;
+  text-align: center;
+  color: #2f231c;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.store_img {
+  width: 100%;
+  display: flex;
+}

@@ -61,7 +61,7 @@ button {
   height: 100%;
   width: 100%;
   display: block;
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center center;
 }

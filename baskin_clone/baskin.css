@@ -1,0 +1,61 @@
+@charset "uft-8";
+@import url("./slide.css");
+@import url("./menu.css");
+@import url("./topbar.css");
+@import url("./event.css");
+@import url("./store.css");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "나눔고딕", "굴림";
+  letter-spacing: -0.05em;
+}
+
+/* 아이스크림 메뉴 */
+.ice {
+  background-image: url(./img/bg_menu.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  text-align: center;
+}
+/* 메뉴 소제목 */
+.ice > h1 {
+  font-weight: bolder;
+  padding: 50px;
+  font-size: 18px;
+}
+/* 메뉴 이미지 */
+.ice > .cream:hover {
+  cursor: pointer;
+}
+/* 매장 배달 bar */
+.store {
+  width: 100%;
+  display: block;
+  margin: auto;
+  position: relative;
+  margin-top: 80px;
+}
+.store > span {
+  width: 50%;
+  float: left;
+}
+.store > span > p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.sns {
+  text-align: center;
+}
+.sns p {
+  font-weight: blod;
+  font-size: 20px;
+}
