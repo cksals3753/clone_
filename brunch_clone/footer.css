@@ -1,0 +1,144 @@
+/**
+* @filename : footer.css
+* @author : 문태호 (mun05170@gmail.com)
+* @description : 브런치 footer 영역 css
+*/
+
+/* footer 영역 */
+footer {
+  width: 100%;
+  background-color: #101010;
+}
+
+.foot_container {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/* 사이트맵 레이아웃 */
+.foot_map {
+  height: 240px;
+  display: flex;
+}
+
+.foot_left {
+  width: 380px;
+}
+
+.foot_right {
+  display: flex;
+  justify-content: space-between;
+  width: 580px;
+  height: 100%;
+}
+
+/* 사이트맵 왼쪽 영역 로고 */
+.foot_logo {
+  display: block;
+  background: url("./img/ico_brunch_v8_181004_v2.png") no-repeat 0 0;
+  background-position: -320px -70px;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 22px;
+}
+
+/* 왼쪽영역 코멘트(슬로건) */
+.foot_comment {
+  display: block;
+  width: 184px;
+  height: 37px;
+  background: url("./img/txt_brunch_v5_181004_v2.png") no-repeat 0 0;
+  background-position: 0 -319px;
+  text-indent: -10000px;
+  margin-bottom: 8px;
+}
+
+.foot_comment_author {
+  display: block;
+  width: 68px;
+  height: 16px;
+  background: url("./img/txt_brunch_v5_181004_v2.png") no-repeat 0 0;
+  background-position: -190px -320px;
+  text-indent: -10000px;
+}
+
+/* 오른쪽 사이트맵 영역 */
+.map_list a {
+  display: block;
+  color: #d9d9d9;
+  font-weight: 300;
+  font-size: 12.5px;
+  margin-bottom: 22px;
+}
+
+.map_list a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.map_list strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 빈칸 표시 지우기 */
+#nodp {
+  font-weight: 300;
+  font-size: 12.5px;
+  margin-bottom: 22px;
+}
+
+/* 두번째줄 이동 */
+.map_list:nth-child(2) {
+  padding-left: 30px;
+}
+
+/* 카피라이트 영역 */
+.foot_copy {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy_kakao {
+  display: block;
+  font-size: 11px;
+  font-style: italic;
+  font-family: Georgia, sans-serif;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.copy_kakao:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* 우측 다운로드 버튼 */
+.down_link {
+  display: flex;
+  padding-right: 5px;
+}
+
+.down_link span {
+  margin-left: 25px;
+}
+
+.google {
+  display: block;
+  width: 20px;
+  height: 22px;
+  background: url("./img/ico_brunch_v8_181004_v2.png") no-repeat 0 0;
+  background-position: -260px -100px;
+}
+
+.apple {
+  display: block;
+  width: 18px;
+  height: 22px;
+  background: url("./img/ico_brunch_v8_181004_v2.png") no-repeat 0 0;
+  background-position: -290px -100px;
+}

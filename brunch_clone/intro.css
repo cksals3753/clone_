@@ -1,0 +1,69 @@
+/**
+* @filename : intro.css
+* @author : 문태호 (mun05170@gmail.com)
+* @description : 브런치 인트로 영역 css
+*/
+
+.intro {
+  width: 960px;
+  margin: auto;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+/* 글자별 디자인 설정 */
+.intro-title {
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.intro-sub {
+  display: block;
+  color: rgb(182, 182, 182);
+  font-size: 32px;
+  margin: 7px 0;
+}
+
+.intro-sub:nth-child(4) {
+  color: rgb(224, 224, 224);
+}
+
+/* 인트로 영역 로고 */
+.intro-logo {
+  width: 28px;
+  height: 28px;
+  background: url("./img/ico_brunch_v8_181004_v2.png") no-repeat 0 0;
+  background-position: -120px -200px;
+  position: absolute;
+  right: -40px;
+  top: -5px;
+}
+
+/* 우측 아래 notice 영역 */
+.notice_container {
+  padding: 20px 0;
+  font-family: "Noto Sans DemiLight", "Malgun Gothic", serif;
+}
+
+.notice {
+  text-align: end;
+}
+
+/* 인터벌로 토글할 .blind */
+.notice_li.blind {
+  display: none;
+}
+
+/* notice 글자 설정 */
+.notice_banner {
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  font-size: 11px;
+  color: #00c3bd;
+}
+
+.notice_text {
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+}

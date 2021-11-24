@@ -1,0 +1,143 @@
+/**
+* @filename : article.css
+* @author : 문태호 (mun05170@gmail.com)
+* @description : 브런치 내용(글) 영역 css
+*/
+
+/* 내용 영역 */
+.articles_container {
+  position: relative;
+}
+
+/* 내용 영역 타이틀 */
+.brunch_articles {
+  margin: 0 auto;
+  width: 380px;
+  height: 13px;
+  background: url("./img/txt_brunch_v5_181004_v2.png") no-repeat 0 0;
+  background-position: 0 -225px;
+  text-indent: -10000px;
+}
+
+.brunch_articles2 {
+  display: block;
+  width: 162px;
+  height: 11px;
+  margin: 15px auto 47px;
+  background: url("./img/txt_brunch_v5_181004_v2.png") no-repeat 0 0;
+  background-position: 0 -75px;
+  text-indent: -10000px;
+}
+
+/* 내용 슬라이드 영역 */
+.article_area {
+  height: 780px;
+}
+
+/* 내용 슬라이드 페이지 */
+.artice_page {
+  height: 100%;
+  width: 960px;
+  margin: auto;
+  overflow: visible;
+  position: relative;
+}
+
+/* 내용 ul */
+.article_list {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  transition: left 0.3s;
+}
+
+/* 내용 개별 영역 */
+.article_list li {
+  padding: 0 10px;
+}
+
+.link_slide {
+  display: block;
+}
+
+.img_articles {
+  max-height: 320px;
+  margin-bottom: 20px;
+}
+
+.tit_subject {
+  font-weight: 400;
+  font-size: 16px;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333;
+}
+
+.desc_subject {
+  display: block;
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  word-break: break-all;
+  font-family: "Noto Sans Light", sans-serif;
+  color: #959595;
+  text-align: justify;
+}
+
+/* 내용 author */
+.info_by {
+  font-size: 12px;
+  padding-top: 22px;
+  color: #959595;
+}
+
+.ico_by {
+  font-size: 12px;
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  color: #bfbfbf;
+}
+
+/* 내용 슬라이드 화살표 */
+.article_ctrl_left {
+  display: block;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-indent: -10000px;
+  background: url("./img/ico_brunch_v8_181004_v2.png") no-repeat 0 0;
+  background-position: -167px -175px;
+}
+.article_ctrl_right {
+  display: block;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  text-indent: -10000px;
+  background: url("./img/ico_brunch_v8_181004_v2.png") no-repeat 0 0;
+  background-position: -269px -175px;
+}
+
+/* Top 버튼 */
+.top {
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  width: 60px;
+  height: 31px;
+  background: url("./img/view_discover_150824.png") no-repeat;
+  background-position: 0 -90px;
+  z-index: 10;
+  text-indent: -10000px;
+}
+
+.top:hover {
+  background-position: -90px -90px;
+}

@@ -1,0 +1,74 @@
+/**
+* @filename : topbar.css
+* @author : 문태호 (mun05170@gmail.com)
+* @description : 배스킨라빈스 헤더 로고 영역 css
+*/
+/* header: 로고영역 + 메뉴바 */
+header {
+  width: 100%;
+  border-top: 3px solid #ff7c98;
+  border-bottom: 1px solid #3f291a;
+  background: url("./img/bg_header.gif") 50% 0 repeat-x;
+}
+
+/* 헤더 초기화 */
+header a {
+  display: block;
+  text-decoration: none;
+  color: #4a3d39;
+}
+
+/* 로고영역 */
+#topbar {
+  height: 136px;
+  width: 100%;
+}
+/* 로고 콘텐츠 영역 */
+.top_container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 헤더 탑 */
+.top {
+  height: 135px;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 소셜 이미지 */
+.top_social {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.top_social li {
+  margin: 0 5px;
+}
+
+/* 고객센터 정렬 */
+.top_help {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.top_help a {
+  font-size: 11px;
+  padding: 0 8px;
+}
+
+.top_help img {
+  margin-left: 20px;
+}

@@ -1,0 +1,81 @@
+/**
+* @filename : keyword.css
+* @author : 문태호 (mun05170@gmail.com)
+* @description : 브런치 키워드 영역 css
+*/
+
+/* 키워드 영역 */
+.keyword_container {
+  margin: 150px auto;
+  width: 960px;
+}
+
+/* 키워드 제목 */
+.brunch_keyword {
+  margin: auto;
+  width: 266px;
+  height: 13px;
+  background: url("./img/txt_brunch_v5_181004_v2.png") no-repeat 0 0;
+  background-position: -101px -300px;
+  text-indent: -10000px;
+}
+
+/* 키워드 제목 한글 */
+.brunch_keyword2 {
+  margin: 20px auto;
+  width: 149px;
+  height: 11px;
+  background: url("./img/txt_brunch_v5_181004_v2.png") no-repeat 0 0;
+  background-position: -175px 0;
+  text-indent: -10000px;
+}
+
+/* 키워드 패널 영역 */
+.keyword_pannel {
+  width: 100%;
+  height: 363px;
+  margin: 10px auto 0 auto;
+  position: relative;
+}
+
+/* 키워드 anckor */
+.keyword {
+  position: absolute;
+  width: 119px;
+  height: 119px;
+  text-align: center;
+  border: 1px solid #eee;
+  z-index: 1;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0s;
+}
+
+.keyword_txt {
+  display: block;
+  text-align: center;
+  font-size: 13.5px;
+  color: inherit;
+}
+
+/* 키워드 호버 이벤트 */
+.keyword:hover {
+  border: 1px solid #00c3bd;
+  color: #00c3bd;
+  z-index: 2;
+}
+
+/* 키워드 새소식 뱃지 */
+.keyword_new {
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  right: 12px;
+  background-image: url("./img/img_weekly.v2.png");
+  background-position: -77px -80px;
+}

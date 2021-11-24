@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글이 작품이 되는 공간, 브런치(클론)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 사이드바 -->
+    <div class="sidebar">
+        <!-- 사이드바 위 가입 영역 -->
+        <div class="join">
+            <div class="join_logo"></div>
+            <p class="slogan">You can make anything<br>by writing</p>
+            <p class="slogan_writer">- C.S.Lewis -</p>
+            <a href="#" class="join_link"><button class="join_btn">브런치 시작하기</button></a>
+        </div>
+        <!-- 사이드바 아래 메뉴 영역 -->
+        <div class="menu">
+            <ul class="menu_link">
+                <li class="menu_btn"><a href="#">
+                        <span class="bar_left"></span> 브런치 홈 <span class="bar_right"></span>
+                    </a>
+                </li>
+                <li class="menu_btn"><a href="#">
+
+                        <span class="bar_blind bar_left"></span> 브런치 나우 <span class="bar_blind bar_right"></span>
+                    </a></li>
+                <li class="menu_btn"><a href="#">
+
+                        <span class="bar_blind bar_left"></span> 브런치 책방 <span class="bar_blind bar_right"></span>
+                    </a></li>
+            </ul>
+            <div class="report-project">
+                <a href="#" class="report">
+                    <span class="event">이벤트</span>
+                    <span class="report_txt">결산 리포트 받기</span>
+                    <span class="report_arrow"></span>
+                </a>
+                <div class="writer_project">
+                    <img src="./img/project.png">
+
+                </div>
+            </div>
+            <div class="pw_remind">
+                <a class="pw_remind_link" href="#">계정을 잊어버리셨나요?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 페이지 상단 헤더 영역 -->
+    <header>
+        <nav>
+            <!-- 헤더 좌측 햄버거 버튼과 로고 -->
+            <div class="header_left">
+                <button class="ham" id="ham"></button>
+                <a href="#" id="header_logo"><span>brunch</span></a>
+            </div>
+            <!-- 헤더 우측 시작하기 버튼과 찾기 버튼 -->
+            <div class="header_right">
+                <div class="start_btn" id="start_btn">
+                    <span>시작하기</span>
+                </div>
+                <button id="search_btn"></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 메인은 크게 인트로, 슬라이드, 키워드, 작가, 내용(글) 영역으로 나눔 -->
+    <main>
+        <!-- 인트로 영역 -->
+        <div class="intro">
+            <h2 class="intro-title">글이 작품이 되는 공간, 브런치
+                <span class="intro-logo"></span>
+            </h2>
+            <p class="intro-sub">브런치에 담긴 아름다운 작품을 감상해 보세요.</p>
+            <p class="intro-sub">그리고 다시 꺼내 보세요.</p>
+            <p class="intro-sub">서랍 속 간직하고 있는 글과 감성을.</p>
+
+            <!-- 인트로영역 우측 하단 인터벌 알림 영역 -->
+            <div class="notice_container">
+                <ul class="notice">
+                    <li class="notice_li ">
+                        <span class="notice_banner">Update</span>
+                        <a href="" id="notice_link">
+                            <span class="notice_text">글쓰기 약속 알림 기능 추가 안내</span>
+                        </a>
+                    </li>
+                    <li class="notice_li blind">
+                        <span class="notice_banner">Notice</span>
+                        <a href="" id="notice_link">
+                            <span class="notice_text">[사전 안내] SNS'공유 수" 기능 종료</span>
+                        </a>
+                    </li>
+                    <li class="notice_li blind">
+                        <span class="notice_banner">Update</span>
+                        <a href="" id="notice_link">
+                            <span class="notice_text">댓글 쓰기 허용 기능과 유저 차단 기능 추가 안내</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 슬라이드 전체 영역 -->
+        <div class="slide_container">
+            <!-- 이미지 슬라이드 영역 -->
+            <div class="slide_area">
+                <!-- 슬라이드 페이지 지정 -->
+                <div class="slide_page">
+                    <ul class="list_slide">
+                        <li class="slide">
+                            <div class="slide_inner div2">
+                                <a href="#" class="full">
+                                    <div class="book_cover">
+                                        <img class="book_img"
+                                            src="https://img1.daumcdn.net/thumb/C460x648.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/NfP/image/350CkpxQ84A2p_aJk9g7cTOvorg.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">그리스에서<br>한달살기</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                dami
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide_inner div2">
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/e10f398bb87a414ea5b664558a2e6ebc"
+                                        class="img_pic" alt="각자의 잠버릇">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">각자의 잠버릇</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                피어라
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/1e4c52763e6246ab83a1f1ae1d6ba46b"
+                                        class="img_pic" alt="나도 시누이는<br>처음이라<br>">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">나도 시누이는 처음이라</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                웨드니스
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="slide_inner div3">
+                                <a class="full" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C320x520.fjpg/?fname=https://t1.daumcdn.net/section/oc/88f354e47f1c4c1eadb94641e6a4ecb1"
+                                        class="img_pic" alt="&quot;편의점에서 컵라면<br>먹고 올게&quot; 이<br>말에 꽂혔다">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">"편의점에서 컵라면<br>먹고 올게" 이<br>말에 꽂혔다</div>
+                                            <div class="slide_author">
+                                                아이를 독립적인 인격체로 인정하게 된<br>날을 기억한다(물론 아이는 태어...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide_inner div3">
+                                <a class="full" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C320x520.fjpg/?fname=https://t1.daumcdn.net/section/oc/48375a40391643f991d3041268c19277"
+                                        class="img_pic" alt="돈까스의 계절">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">돈까스의 계절</div>
+                                            <div class="slide_author">며칠 전,&nbsp;첫눈이 내렸다. 원래<br>가을이 이다지도 짧았었나? 정말...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide_inner div3">
+                                <a class="full" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C320x520.fjpg/?fname=https://t1.daumcdn.net/section/oc/77b90d7f53f2405bbfdb5b9a39b27819"
+                                        class="img_pic" alt="제주 바다에 폭<br>빠져버렸다<br>">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">제주 바다에 폭<br>빠져버렸다</div>
+                                            <div class="slide_author">
+                                                아... 일요일에 새벽 6시 반<br>기상이라니. 더 자고 싶다, 더...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="slide_inner div2">
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/f3ccab6bf94d4610b3b19dc236f78acd"
+                                        class="img_pic" alt="배추찜쌈">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">배추찜쌈</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                이혜주
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/72bfe45d35f042eeac59199c95a15161"
+                                        class="img_pic" alt="전기차를 샀다">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">전기차를 샀다</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                시애틀 닥터오
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide_inner div2">
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/91bd27a1b4e243c9a2fb7799d801d673"
+                                        class="img_pic" alt="항상 화를 내는<br>사람과 일하는 고통<br>">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">항상 화를 내는 사람과 일하는 고통</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                박팔구
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/f74e085cc95f4ba5bd08b614f12dc557"
+                                        class="img_pic" alt="화장실 옆칸에서<br>나를 내려다보는<br>눈과 마주쳤다">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">화장실 옆칸에서<br>나를 내려다보는<br>눈과 마주쳤다</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                더오드
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="slide_inner div2">
+                                <a class="full" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C520x520.fjpg/?fname=https://t1.daumcdn.net/section/oc/aac8d77228684ee48ececa7ee42d30e9"
+                                        class="img_pic" alt="댁에 불이 난 것<br>같습니다.<br>">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">댁에 불이 난 것<br>같습니다.</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                고든
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide_inner div2">
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C440x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/0e23a868ea3645818d3fe63ae1523d9b"
+                                        class="img_pic" alt="회사에서 소는 누가<br>키우지<br>">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">회사에서 소는 누가 키우지</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                임희결
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/91622108d59d4e38be38379072bc2429"
+                                        class="img_pic" alt="고층살이에 대하여">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">고층살이에 대하여</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                사다인
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="slide_inner div3">
+                                <a class="full" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C320x520.fjpg/?fname=https://t1.daumcdn.net/section/oc/88f354e47f1c4c1eadb94641e6a4ecb1"
+                                        class="img_pic" alt="&quot;편의점에서 컵라면<br>먹고 올게&quot; 이<br>말에 꽂혔다">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">"편의점에서 컵라면<br>먹고 올게" 이<br>말에 꽂혔다</div>
+                                            <div class="slide_author">
+                                                아이를 독립적인 인격체로 인정하게 된<br>날을 기억한다(물론 아이는 태어...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide_inner div3">
+                                <a class="full" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C320x520.fjpg/?fname=https://t1.daumcdn.net/section/oc/48375a40391643f991d3041268c19277"
+                                        class="img_pic" alt="돈까스의 계절">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">돈까스의 계절</div>
+                                            <div class="slide_author">며칠 전,&nbsp;첫눈이 내렸다. 원래<br>가을이 이다지도 짧았었나? 정말...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide_inner div3">
+                                <a class="full" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C320x520.fjpg/?fname=https://t1.daumcdn.net/section/oc/77b90d7f53f2405bbfdb5b9a39b27819"
+                                        class="img_pic" alt="제주 바다에 폭<br>빠져버렸다<br>">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">제주 바다에 폭<br>빠져버렸다</div>
+                                            <div class="slide_author">
+                                                아... 일요일에 새벽 6시 반<br>기상이라니. 더 자고 싶다, 더...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="slide_inner div2">
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/f3ccab6bf94d4610b3b19dc236f78acd"
+                                        class="img_pic" alt="배추찜쌈">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">배추찜쌈</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                이혜주
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/72bfe45d35f042eeac59199c95a15161"
+                                        class="img_pic" alt="전기차를 샀다">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">전기차를 샀다</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                시애틀 닥터오
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide_inner div2">
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/91bd27a1b4e243c9a2fb7799d801d673"
+                                        class="img_pic" alt="항상 화를 내는<br>사람과 일하는 고통<br>">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">항상 화를 내는 사람과 일하는 고통</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                박팔구
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/f74e085cc95f4ba5bd08b614f12dc557"
+                                        class="img_pic" alt="화장실 옆칸에서<br>나를 내려다보는<br>눈과 마주쳤다">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">화장실 옆칸에서<br>나를 내려다보는<br>눈과 마주쳤다</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                더오드
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="slide_inner div2">
+                                <a class="full" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C520x520.fjpg/?fname=https://t1.daumcdn.net/section/oc/aac8d77228684ee48ececa7ee42d30e9"
+                                        class="img_pic" alt="댁에 불이 난 것<br>같습니다.<br>">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">댁에 불이 난 것<br>같습니다.</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                고든
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide_inner div2">
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C440x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/0e23a868ea3645818d3fe63ae1523d9b"
+                                        class="img_pic" alt="회사에서 소는 누가<br>키우지<br>">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">회사에서 소는 누가 키우지</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                임희결
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/91622108d59d4e38be38379072bc2429"
+                                        class="img_pic" alt="고층살이에 대하여">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">고층살이에 대하여</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                사다인
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="slide_inner div3">
+                                <a class="full" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C320x520.fjpg/?fname=https://t1.daumcdn.net/section/oc/88f354e47f1c4c1eadb94641e6a4ecb1"
+                                        class="img_pic" alt="&quot;편의점에서 컵라면<br>먹고 올게&quot; 이<br>말에 꽂혔다">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">"편의점에서 컵라면<br>먹고 올게" 이<br>말에 꽂혔다</div>
+                                            <div class="slide_author">
+                                                아이를 독립적인 인격체로 인정하게 된<br>날을 기억한다(물론 아이는 태어...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide_inner div3">
+                                <a class="full" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C320x520.fjpg/?fname=https://t1.daumcdn.net/section/oc/48375a40391643f991d3041268c19277"
+                                        class="img_pic" alt="돈까스의 계절">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">돈까스의 계절</div>
+                                            <div class="slide_author">며칠 전,&nbsp;첫눈이 내렸다. 원래<br>가을이 이다지도 짧았었나? 정말...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide_inner div3">
+                                <a class="full" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C320x520.fjpg/?fname=https://t1.daumcdn.net/section/oc/77b90d7f53f2405bbfdb5b9a39b27819"
+                                        class="img_pic" alt="제주 바다에 폭<br>빠져버렸다<br>">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">제주 바다에 폭<br>빠져버렸다</div>
+                                            <div class="slide_author">
+                                                아... 일요일에 새벽 6시 반<br>기상이라니. 더 자고 싶다, 더...
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="slide_inner div2">
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/f3ccab6bf94d4610b3b19dc236f78acd"
+                                        class="img_pic" alt="배추찜쌈">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">배추찜쌈</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                이혜주
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/72bfe45d35f042eeac59199c95a15161"
+                                        class="img_pic" alt="전기차를 샀다">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">전기차를 샀다</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                시애틀 닥터오
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slide_inner div2">
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/91bd27a1b4e243c9a2fb7799d801d673"
+                                        class="img_pic" alt="항상 화를 내는<br>사람과 일하는 고통<br>">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">항상 화를 내는 사람과 일하는 고통</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                박팔구
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="updown" href="#">
+                                    <img src="//img1.daumcdn.net/thumb/C480x260.fjpg/?fname=https://t1.daumcdn.net/section/oc/f74e085cc95f4ba5bd08b614f12dc557"
+                                        class="img_pic" alt="화장실 옆칸에서<br>나를 내려다보는<br>눈과 마주쳤다">
+                                    <div class="slide_txt_box">
+                                        <div class="slide_txt">
+                                            <div class="slide_title">화장실 옆칸에서<br>나를 내려다보는<br>눈과 마주쳤다</div>
+                                            <div class="slide_author">
+                                                <span class="slide_by">by</span>
+                                                더오드
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 좌우 버튼 -->
+                <div class="slide_ctrl">
+                    <button class="slide_ctrl_left">left</button>
+                    <button class="slide_ctrl_right">right</button>
+                </div>
+            </div>
+            <!-- 페이지 이동 버튼 -->
+            <div class="slide_page_nav">
+                <button class="slide_nav_btn" id="page0" data-page="0">01</button>
+                <button class="slide_nav_btn" id="page1" data-page="1">02</button>
+                <button class="slide_nav_btn" id="page2" data-page="2">03</button>
+                <button class="slide_nav_btn" id="page3" data-page="3">04</button>
+                <button class="slide_nav_btn" id="page4" data-page="4">05</button>
+                <button class="slide_nav_btn" id="page5" data-page="5">06</button>
+                <button class="slide_nav_btn" id="page6" data-page="6">07</button>
+                <button class="slide_nav_btn" id="page7" data-page="7">08</button>
+                <button class="slide_nav_btn" id="page8" data-page="8">09</button>
+            </div>
+        </div>
+
+        <!-- 키워드 전체 영역 -->
+        <div class="keyword_container">
+            <h2 class="brunch_keyword">BRUNCH KEYWORD</h2>
+            <p class="brunch_keyword2">키워드로 분류된 다양한 글 모음</p>
+
+            <!-- 키워드 패널 -->
+            <div class="keyword_pannel">
+                <a class="keyword" href="/keyword/지구한바퀴_세계여행?q=g" target="_blank" style="left: 0px; top: 0px;">
+                    <span class="keyword_txt">지구한바퀴<br>세계여행</span>
+                </a>
+                <a class="keyword" href="/keyword/그림·웹툰?q=g" target="_blank" style="left: 120px; top: 0px;">
+                    <span class="keyword_txt">그림·웹툰</span>
+                </a>
+                <a class="keyword" href="/keyword/시사·이슈?q=g" target="_blank" style="left: 240px; top: 0px;">
+                    <span class="keyword_txt">시사·이슈</span>
+                    <span class="keyword_new"></span>
+                </a>
+                <a class="keyword" href="/keyword/IT_트렌드?q=g" target="_blank" style="left: 360px; top: 0px;">
+                    <span class="keyword_txt">IT<br>트렌드</span>
+                </a>
+                <a class="keyword" href="/keyword/사진·촬영?q=g" target="_blank" style="left: 480px; top: 0px;">
+                    <span class="keyword_txt">사진·촬영</span>
+                </a>
+                <a class="keyword" href="/keyword/취향저격_영화_리뷰?q=g" target="_blank" style="left: 600px; top: 0px;">
+                    <span class="keyword_txt">취향저격<br>영화 리뷰</span>
+                </a>
+                <a class="keyword" href="/keyword/오늘은_이런_책?q=g" target="_blank" style="left: 720px; top: 0px;">
+                    <span class="keyword_txt">오늘은<br>이런 책</span>
+                    <span class="keyword_new"></span>
+                </a>
+                <a class="keyword" href="/keyword/뮤직_인사이드?q=g" target="_blank" style="left: 840px; top: 0px;">
+                    <span class="keyword_txt">뮤직 인사이드</span>
+                </a>
+                <a class="keyword" href="/keyword/글쓰기_코치?q=g" target="_blank" style="left: 0px; top: 120px;">
+                    <span class="keyword_txt">글쓰기<br>코치</span>
+                </a>
+                <a class="keyword" href="/keyword/직장인_현실_조언?q=g" target="_blank" style="left: 120px; top: 120px;">
+                    <span class="keyword_txt">직장인<br>현실 조언</span>
+                </a>
+                <a class="keyword" href="/keyword/스타트업_경험담?q=g" target="_blank" style="left: 240px; top: 120px;">
+                    <span class="keyword_txt">스타트업<br>경험담</span>
+                    <span class="keyword_new"></span>
+                </a>
+                <a class="keyword" href="/keyword/육아_이야기?q=g" target="_blank" style="left: 360px; top: 120px;">
+                    <span class="keyword_txt">육아<br>이야기</span>
+                </a>
+                <a class="keyword" href="/keyword/요리·레시피?q=g" target="_blank" style="left: 480px; top: 120px;">
+                    <span class="keyword_txt">요리·레시피</span>
+                </a>
+                <a class="keyword" href="/keyword/건강·운동?q=g" target="_blank" style="left: 600px; top: 120px;">
+                    <span class="keyword_txt">건강·운동</span>
+                </a>
+                <a class="keyword" href="/keyword/멘탈_관리_심리_탐구?q=g" target="_blank" style="left: 720px; top: 120px;">
+                    <span class="keyword_txt">멘탈 관리<br>심리 탐구</span>
+                </a>
+                <a class="keyword" href="/keyword/디자인_스토리?q=g" target="_blank" style="left: 840px; top: 120px;">
+                    <span class="keyword_txt">디자인<br>스토리</span>
+                </a>
+                <a class="keyword" href="/keyword/문화·예술?q=g" target="_blank" style="left: 0px; top: 240px;">
+                    <span class="keyword_txt">문화·예술</span>
+                </a>
+                <a class="keyword" href="/keyword/건축·설계?q=g" target="_blank" style="left: 120px; top: 240px;">
+                    <span class="keyword_txt">건축·설계</span>
+                </a>
+                <a class="keyword" href="/keyword/인문학·철학?q=g" target="_blank" style="left: 240px; top: 240px;">
+                    <span class="keyword_txt">인문학·철학</span>
+                </a>
+                <a class="keyword" href="/keyword/쉽게_읽는_역사?q=g" target="_blank" style="left: 360px; top: 240px;">
+                    <span class="keyword_txt">쉽게 읽는<br>역사</span>
+                </a>
+                <a class="keyword" href="/keyword/우리집_반려동물?q=g" target="_blank" style="left: 480px; top: 240px;">
+                    <span class="keyword_txt">우리집<br>반려동물</span>
+                </a>
+                <a class="keyword" href="/keyword/멋진_캘리그래피?q=g" target="_blank" style="left: 600px; top: 240px;">
+                    <span class="keyword_txt">멋진<br>캘리그래피</span>
+                </a>
+                <a class="keyword" href="/keyword/사랑·이별?q=g" target="_blank" style="left: 720px; top: 240px;">
+                    <span class="keyword_txt">사랑·이별</span>
+                </a>
+                <a class="keyword" href="/keyword/감성_에세이?q=g" target="_blank" style="left: 840px; top: 240px;">
+                    <span class="keyword_txt">감성<br>에세이</span>
+                    <span class="keyword_new"></span></a>
+            </div>
+        </div>
+
+        <!-- 작가 전체 영역 -->
+        <div class="writer_container">
+            <h2 class="brunch_writers">BRUNCH WRITERS</h2>
+            <P class="brunch_writers2">브런치 추천 작가</P>
+            <!-- 작가 패널 전환 버튼 -->
+            <div class="writers_pannel_ctrl">
+                <button class="writers_pannel_btn" data-ul="18">문화</button>
+                <button class="writers_pannel_btn" data-ul="20">반려동물</button>
+                <button class="writers_pannel_btn" data-ul="56">취업</button>
+            </div>
+            <!-- 작가 패널 -->
+            <div class="writers_pannel">
+                <!-- ul로 작가 묶음 -->
+                <ul class="list_writers writer_18">
+                    <li>
+                        <a href="/@min9195" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/guest/image/Ro0XDlWROpW46LDgUeNzb_1PpME"
+                                width="80" height="80" class="img_brunch thumb_img" alt="김상민노랑가방그림작가">
+                            <strong class="tit_wirter">김상민노랑가방그림작가</strong>
+                            <span class="team_writer">일러스트레이터</span>
+                            <span class="txt_wirter" style="height: 60px;">그림작가 김상민 입니다
+                                http://www.yellowbag.pe.kr/</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="문화">문화</button>
+                            <button type="button" data-keyword="그림">그림</button>
+                            <button type="button" data-url="/@min9195">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@ggotdul" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/8awB/image/6T3tqA2QM9PIAzuzqejm1Phi2As"
+                                width="80" height="80" class="img_brunch thumb_img" alt="초린혜원">
+                            <strong class="tit_wirter">초린혜원</strong>
+                            <span class="team_writer">출간작가</span>
+                            <span class="txt_wirter" style="height: 60px;">음악방송작가로 오랜시간을 보냈죠. 사람과 자연 그 사이, 삶을 아우르는 모든
+                                것들을 씁니다. 특히 시간(추억)의 연대와 음악, 시와 영화의 뒤안을 따뜻하게 지켜보려 노력합니다.</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="문화">문화</button>
+                            <button type="button" data-keyword="라이프스타일">라이프스타일</button>
+                            <button type="button" data-url="/@ggotdul">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@koopost" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/3rWZ/image/_hf7UV3o4iYoPiCgJT87cfKJ6Mc.jpg"
+                                width="80" height="80" class="img_brunch thumb_img" alt="구기자">
+                            <strong class="tit_wirter">구기자</strong>
+                            <span class="team_writer">기자</span>
+                            <span class="txt_wirter" style="height: 60px;">구희언 동아일보 출판국 기자. 취재 뒷 이야기와 지면에서 볼 수 없는 이야기를
+                                다룹니다. hawkeye@donga.com, koo@koopost.com</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="문화">문화</button>
+                            <button type="button" data-keyword="여행">여행</button>
+                            <button type="button" data-url="/@koopost">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@fuggyee" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/guest/image/K3IO9MME_pqwSuOUWNHNjPmAvgk"
+                                width="80" height="80" class="img_brunch thumb_img" alt="강병진">
+                            <strong class="tit_wirter">강병진</strong>
+                            <span class="team_writer">에디터</span>
+                            <span class="txt_wirter" style="height: 60px;">前 허프포스트코리아 편집장. 영화저널리스트, 前 씨네21' 기자, 야구팬, 캠퍼,
+                                유튜브 크리에이터 ('에디터K의 이상한 장면 운영중)</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="문화">문화</button>
+                            <button type="button" data-keyword="영화">영화</button>
+                            <button type="button" data-url="/@fuggyee">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@zenerkrepresent" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/PCI/image/Y52U32xY8EmBRHvJ_CDAM2ajeS0.JPG"
+                                width="80" height="80" class="img_brunch thumb_img" alt="김도헌">
+                            <strong class="tit_wirter">김도헌</strong>
+                            <span class="team_writer">칼럼니스트</span>
+                            <span class="txt_wirter" style="height: 60px;">대중음악평론가 | zener1218@gmail.com</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="문화">문화</button>
+                            <button type="button" data-keyword="음악">음악</button>
+                            <button type="button" data-url="/@zenerkrepresent">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@coffeens" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/5ru/image/J_s5H3CfEMGDEQ8w0Wt6m6F0A8c.jpg"
+                                width="80" height="80" class="img_brunch thumb_img" alt="소보로">
+                            <strong class="tit_wirter">소보로</strong>
+                            <span class="team_writer">로컬그라운드 에디터</span>
+                            <span class="txt_wirter" style="height: 60px;">커피 외계 도래설을 주창하는 야매 기획자</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="문화">문화</button>
+                            <button type="button" data-keyword="책">책</button>
+                            <button type="button" data-url="/@coffeens">더보기</button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list_writers writer_20">
+                    <li>
+                        <a href="/@doksin" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/31t/image/oF8A1R9O8d3QF5vQFPXV9hdL_90.jpg"
+                                width="80" height="80" class="img_brunch thumb_img" alt="월영">
+                            <strong class="tit_wirter">월영</strong>
+                            <span class="team_writer">기자</span>
+                            <span class="txt_wirter" style="height: 60px;">전직 기자. 지하철 출퇴근 생활자. 종일 보고 듣고 읽고 자판을 두드려야 월급이
+                                나옴. &lt;두 명은 아니지만 둘이 살아요&gt;저자. 페르시안 친칠라 송이 반려인.</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="반려동물">반려동물</button>
+                            <button type="button" data-keyword="에세이">에세이</button>
+                            <button type="button" data-url="/@doksin">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@hany0806" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/8IEx/image/tqSmaVS7VelFICghVvzjaxvwZ0w.jpg"
+                                width="80" height="80" class="img_brunch thumb_img" alt="주토피아">
+                            <strong class="tit_wirter">주토피아</strong>
+                            <span class="team_writer">동물원 수의사</span>
+                            <span class="txt_wirter" style="height: 60px;">야생동물과 동물원 동물과 일상에 대한 글을 쓰는 작가 입니다.</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="반려동물">반려동물</button>
+                            <button type="button" data-keyword="자연">자연</button>
+                            <button type="button" data-url="/@hany0806">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@wonish" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/r0h/image/zCk3OSmTsUqd5Ou8k164QbTXJKk.jpg"
+                                width="80" height="80" class="img_brunch thumb_img" alt="제니">
+                            <strong class="tit_wirter">제니</strong>
+                            <span class="team_writer">마케터</span>
+                            <span class="txt_wirter" style="height: 60px;">별로 도움 될 만한 건 없고요, 그냥 하고 싶은 얘기를 씁니다.</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="반려동물">반려동물</button>
+                            <button type="button" data-keyword="에세이">에세이</button>
+                            <button type="button" data-url="/@wonish">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@yddggi" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/3yPO/image/gGAuS2T2PJA0Fe5Qpy_njH6TzZg.jpg"
+                                width="80" height="80" class="img_brunch thumb_img" alt="윤파랑">
+                            <strong class="tit_wirter">윤파랑</strong>
+                            <span class="team_writer">만화가</span>
+                            <span class="txt_wirter" style="height: 60px;">에디터로 살다가 얼결에 만화가. 만년 고양이 집사. 네이버 웹툰 &lt;1인용
+                                기분&gt; 완결.</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="반려동물">반려동물</button>
+                            <button type="button" data-keyword="만화">만화</button>
+                            <button type="button" data-url="/@yddggi">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@binkond" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1Sma/image/YGO6Gtjo-PzAumiDI9CY9QfI3Fk.jpg"
+                                width="80" height="80" class="img_brunch thumb_img" alt="이용한">
+                            <strong class="tit_wirter">이용한</strong>
+                            <span class="team_writer">출간작가</span>
+                            <span class="txt_wirter" style="height: 60px;">고양이작가. 시집 &lt;낮에는 낮잠 밤에는 산책&gt;, &lt;공존을 위한
+                                길고양이 안내서&gt;&lt;안녕 고양이는 고마웠어요&gt; http://blog.naver.com/binkond</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="반려동물">반려동물</button>
+                            <button type="button" data-keyword="책">책</button>
+                            <button type="button" data-url="/@binkond">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@1abf7129f5ae474" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/cXwq/image/JbkQIVK60dPbFkUtDvKcHt9B1qs.jpg"
+                                width="80" height="80" class="img_brunch thumb_img" alt="최송목">
+                            <strong class="tit_wirter">최송목</strong>
+                            <span class="team_writer">출간작가</span>
+                            <span class="txt_wirter" style="height: 60px;">강아지'보드리'를 좋아하는 최송목의 브런치입니다.</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="반려동물">반려동물</button>
+                            <button type="button" data-keyword="에세이">에세이</button>
+                            <button type="button" data-url="/@1abf7129f5ae474">더보기</button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list_writers writer_56">
+                    <li>
+                        <a href="/@yooncohg" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/guest/image/3pHUpxV_4XqYhLm5zud2Rbqsrng"
+                                width="80" height="80" class="img_brunch thumb_img" alt="윤영돈 코치">
+                            <strong class="tit_wirter">윤영돈 코치</strong>
+                            <span class="team_writer">윤코치연구소 출간작가</span>
+                            <span class="txt_wirter" style="height: 60px;">윤코치연구소/문학박사/전문코치/ 단국대 초빙교수[채용트렌드 2020][기획서
+                                마스터][보고서 마스터][글쓰기 신공][독습] 외 다수</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="취업">취업</button>
+                            <button type="button" data-keyword="자기계발">자기계발</button>
+                            <button type="button" data-url="/@yooncohg">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@sosoceo" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/21Pe/image/TyoOnlfRl5GYvum8NrE7X-UHzq4.jpg"
+                                width="80" height="80" class="img_brunch thumb_img" alt="sosoceo">
+                            <strong class="tit_wirter">sosoceo</strong>
+                            <span class="team_writer">마케터</span>
+                            <span class="txt_wirter" style="height: 60px;">프로그램개발/블로그/유튜브/드럼/투자/강의/판매/해외직구 등 다양한 방식으로
+                                세상과 소통하면서 나만의 방식으로 사는 프리랜서 "SoSoCEO" 입니다.</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="취업">취업</button>
+                            <button type="button" data-keyword="경영">경영</button>
+                            <button type="button" data-url="/@sosoceo">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@jcmarkpark" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/2VTq/image/rj4glsBjHAFeXTGMJELr8OeRiYs.jpg"
+                                width="80" height="80" class="img_brunch thumb_img" alt="Mark">
+                            <strong class="tit_wirter">Mark</strong>
+                            <span class="team_writer">컨설턴트</span>
+                            <span class="txt_wirter" style="height: 60px;">직장 생활, 커리어, 이직, 채용, MBA에 대한 풍부한 경험을 바탕으로 치열하게
+                                살고 있는 직장인들에게 힘과 위로가 되는 글을 쓰고 있습니다.</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="취업">취업</button>
+                            <button type="button" data-keyword="직장">직장</button>
+                            <button type="button" data-url="/@jcmarkpark">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@jobhelping" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fpng/?fname=http://t1.daumcdn.net/brunch/service/user/uq1/image/vRLuTlTiF2MaDU4OGLbNY3IxWaI.png"
+                                width="80" height="80" class="img_brunch thumb_img" alt="이대표">
+                            <strong class="tit_wirter">이대표</strong>
+                            <span class="team_writer">이대표유니버스 크리에이터</span>
+                            <span class="txt_wirter" style="height: 60px;">이대표유니버스, 이대표입니다. 커리어튜터를 통해 이직 상담과 콘텐츠, 그 밖의
+                                여러가지 일에 관심있고 도전하고 있습니다.</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="취업">취업</button>
+                            <button type="button" data-keyword="직장">직장</button>
+                            <button type="button" data-url="/@jobhelping">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@insateam" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fjpg/?fname=http://t1.daumcdn.net/brunch/service/guest/image/5AA0VQddt_sL38WwgtQQuIDdjEc"
+                                width="80" height="80" class="img_brunch thumb_img" alt="성공 취업 진로 종결자 윤호상">
+                            <strong class="tit_wirter">성공 취업 진로 종결자 윤호상</strong>
+                            <span class="team_writer">인싸팀찍썰 프리랜서</span>
+                            <span class="txt_wirter" style="height: 60px;">樂&amp;취업! 즐겁게 취업하십시다! <br>평생 지겹도록 도와
+                                드리겠습니다!<br>그룹사 인사팀 출신 &amp; 공공기관 면접관<br>네이버/카카오 인물 등록</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="취업">취업</button>
+                            <button type="button" data-keyword="글쓰기">글쓰기</button>
+                            <button type="button" data-url="/@insateam">더보기</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/@moondol" target="_blank" class="link_writers">
+                            <img src="//img1.daumcdn.net/thumb/C120x120.fpng/?fname=http://t1.daumcdn.net/brunch/service/user/ZJX/image/sHvYEiiCjcJrVpiDhwxIyP0LT7k.png"
+                                width="80" height="80" class="img_brunch thumb_img" alt="문돌이">
+                            <strong class="tit_wirter">문돌이</strong>
+                            <span class="team_writer">개발자</span>
+                            <span class="txt_wirter" style="height: 60px;">개발하는 문돌이. 문과출신으로 금융권에서 IT 개발자로 일합니다. / 연락처 :
+                                moondolit@gmail.com</span>
+                        </a>
+                        <div class="writer_keyword">
+                            <button type="button" data-keyword="취업">취업</button>
+                            <button type="button" data-keyword="직장">직장</button>
+                            <button type="button" data-url="/@moondol">더보기</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 이미지 링크 -->
+        <a href="https://brunch.co.kr/publish" class="book_link" target="_blank">
+            <img src="https://t1.daumcdn.net/section/oc/e0d9e92ea70941b9a4861c128751fc48">
+        </a>
+
+        <!-- 글 목록 -->
+        <div class="articles_container">
+            <h2 class="brunch_articles">RECOMMENDED ARTICLES</h2>
+            <P class="brunch_articles2">브런치의 다양한 글을 만나보세요.</P>
+            <!-- 글 슬라이드 영역 -->
+            <div class="article_area" style="overflow: hidden;">
+                <div class="artice_page">
+                    <ul class="article_list">
+                        <li>
+                            <a href="/@@1Sma/2233" class="link_slide" target="_blank">
+                                <div class="img_articles">
+                                    <img src="//img1.daumcdn.net/thumb/C240x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1Sma/image/7kb2ebOg3JI4PIVGaKVvk0F14xc.JPG"
+                                        width="240" alt="이 아이의 3년후">
+                                </div>
+                                <strong class="tit_subject">이 아이의 3년후</strong>
+                                <p class="desc_subject">이 아이는 자라서(3년 후) 이렇게 됩니다. #점례 ​ ​</p>
+                                <span class="info_by"><span class="ico_by">by</span>이용한</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/@@cYP7/62" class="link_slide" target="_blank">
+                                <div class="img_articles">
+                                    <img src="//img1.daumcdn.net/thumb/C240x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/cYP7/image/fw2G-PIFj3L1GYC_fxnLOxLg9io"
+                                        width="240" alt="조퇴한 아들에게 죽과 라면을 끓여줬다.">
+                                </div>
+                                <strong class="tit_subject">조퇴한 아들에게 죽과 라면을 끓여줬다.</strong>
+                                <p class="desc_subject">"띠리리리리~~~~!!!" 폰이 울린다. 액정을 보니 . . &lt;1호 담임 선생님&gt; . . 지금 시간은
+                                    수업이
+                                    한창 중인
+                                    11시
+                                    30분 일과 중 담임선생님의 연락은 언제나 심장을 뛰게 한다. . . 아이가 배가 아파서 조퇴를 한다고 한다. "네~~~! 선생님 알겠습니다. 지금
+                                    가겠습니다.
+                                    감사드립니다." 바람의 속도로 학교를 달려갔다. </p>
+                                <span class="info_by"><span class="ico_by">by</span>&nbsp;반짝반짝 빛나는</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/@@4DNk/18" class="link_slide" target="_blank">
+                                <div class="img_articles">
+                                    <img src="//img1.daumcdn.net/thumb/C240x0.fpng/?fname=http://t1.daumcdn.net/brunch/service/user/4DNk/image/G-qQStoUjkABRvwXJ9dhLXwQ__Y.png"
+                                        width="240" alt="커피 한 잔에 스타벅스 주식 한 주(SBUX)">
+                                </div>
+                                <strong class="tit_subject">커피 한 잔에 스타벅스 주식 한 주(SBUX)</strong>
+                                <p class="desc_subject">*본 글은 투자 권유가 아니며 투자와 관련되어 발생하는 모든 일에 대한 책임은 투자자 본인에게 있습니다. 미리 보는
+                                    연구
+                                    결과
+                                    지난해
+                                    3월, COVID-19로 인해 주식 시장이 폭싹 주저앉았다. 2월 고점인 약 2255 포인트에서 3월 저점인 약 1140 포인트까지 약 49%
+                                    하락했다.
+                                    그러나 몇
+                                    달 후
+                                    7월에 전고점을 탈환했고 11월에 역사적 고점을 돌파</p>
+                                <span class="info_by"><span class="ico_by">by</span>&nbsp;송곳니</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/@@50vt/36" class="link_slide" target="_blank">
+                                <div class="img_articles">
+                                    <img src="//img1.daumcdn.net/thumb/C240x0.fpng/?fname=http://t1.daumcdn.net/brunch/service/guest/image/o1MHhNdnO2tWNE63r8AzYPqrH7s.png"
+                                        width="240" alt="예쁜 할머니를 꿈꾸는 40대 아줌마">
+                                </div>
+                                <strong class="tit_subject">예쁜 할머니를 꿈꾸는 40대 아줌마</strong>
+                                <p class="desc_subject">SNS에 눈길을 사로잡는 한 권의 책 소개가 올라왔다. 엄마 나이와 엇비슷한 70대 할머니가 쓴 책이다. 가만 보니
+                                    한 달
+                                    전
+                                    출간 투고
+                                    메일을 정중하고 깔끔하게 거절한 출판사에서 나온 책인 듯싶다. 마음 같아서는 못 본 척 그냥 지나치려 했지만 어느 순간 ‘좋아요’를 누르는 자존심 없는
+                                    내
+                                    검지
+                                    손가락을
+                                    발견했다. 채도가 낮은 은은한 민트</p>
+                                <span class="info_by"><span class="ico_by">by</span>&nbsp;아일린</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/@@6ftO/39" class="link_slide" target="_blank">
+                                <div class="img_articles">
+                                    <img src="//img1.daumcdn.net/thumb/C240x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/6ftO/image/z2_szeK1reTaEnBNsEgwyB2mgvg.jpg"
+                                        width="240" alt="망할 놈의 베드 버그">
+                                </div>
+                                <strong class="tit_subject">망할 놈의 베드 버그</strong>
+                                <p class="desc_subject">다들 전날 밤 파티를 즐겼는지, 밤새 시끌벅적했다. 창문으로 들어오는 바닷바람에 눈을 떴다. 에어컨 없는 방이라서
+                                    그런지
+                                    다들
+                                    이불은
+                                    뻥뻥 걷어차고 곤히 자고들 있다. (이 숙소는 가림막이 없었다) 기지개를 피고 이불을 보는데, 빨간 벌레가 기어 다닌다. 뭐지? 싶었지만, 체크아웃을
+                                    위해서
+                                    짐을
+                                    챙겨서
+                                    나왔다. 모기 같은 게 물렸는지, 다리가 간지러워 긁어</p>
+                                <span class="info_by"><span class="ico_by">by</span>&nbsp;Dotori</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/@@di9k/8" class="link_slide" target="_blank">
+                                <div class="img_articles">
+                                    <img src="//img1.daumcdn.net/thumb/C240x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/di9k/image/cQjztIHirNNii-kT0BVXHD86sI8.jpg"
+                                        width="240" alt="60년 웨이팅">
+                                </div>
+                                <strong class="tit_subject">60년 웨이팅</strong>
+                                <p class="desc_subject"> 아빠는 아들 둘을 잃고 하나 남은 귀한 종손이었다. 그 귀함이 어떠했을지 유난한 깔끔으로 고모들은 멀리서 공부하던
+                                    아버지가 올
+                                    때면
+                                    집안을 청소하느라 난리 법석이었다고 했다. 물건은 항상 제 자리, 좋은 음식 또한 본인이 우선이었던 아빠가 결혼을 하고 아이를 낳으면서 '나의, 나에
+                                    의한,
+                                    나를
+                                    위한'
+                                    세계가 달라지기 시작했다. 우리 집은 딸이 넷이나</p>
+                                <span class="info_by"><span class="ico_by">by</span>&nbsp;Sienna</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/@@99cI/80" class="link_slide" target="_blank">
+                                <div class="img_articles">
+                                    <img src="//img1.daumcdn.net/thumb/C240x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/99cI/image/BNKMYrIkOnSindvByb2vxtaHIYM.jpeg"
+                                        width="240" alt="돼지 뒷다리 드세요. 제발!">
+                                </div>
+                                <strong class="tit_subject">돼지 뒷다리 드세요. 제발!</strong>
+                                <p class="desc_subject">돈도 아끼고 맛도 있으며 단백질도 풍부하게 섭취할 수 있는 반찬은 뭐가 있을까요? 우선은 계란이 바로 생각납니다만,
+                                    최근
+                                    가격이
+                                    많이
+                                    비싸져서 사실 가성비까지는 아닙니다. 닭가슴살은 인터넷으로 구매하면 100g 당 약 400원 대에 먹을 수 있습니다만(생닭가슴살 10kg 기준), 일단
+                                    맛이
+                                    많이
+                                    떨어집니다. 오래 먹기가 힘들지요. 다른 요리와의 호환성도 떨</p>
+                                <span class="info_by"><span class="ico_by">by</span>&nbsp;지중해</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/@@3sxW/78" class="link_slide" target="_blank">
+                                <div class="img_articles">
+                                    <img src="//img1.daumcdn.net/thumb/C240x0.fpng/?fname=http://t1.daumcdn.net/brunch/service/user/3sxW/image/eIQrI51dNOWUfMvqOEL4roGJRBM.png"
+                                        width="240" alt="외국에서 남자친구보다 중요한 것">
+                                </div>
+                                <strong class="tit_subject">외국에서 남자친구보다 중요한 것</strong>
+                                <p class="desc_subject">방을 구한 후, 텅 빈 방을 어떻게든 내가 살 곳으로 만들어보려고 얼마나 인터넷에서 주문을 해대고, 중고 가게와
+                                    중고 물품
+                                    거래
+                                    사이트를
+                                    들락날락 거렸는지 모른다. 포크, 칼부터 접시, 쟁반, 카페트까지 바리바리 사 날랐다. 그렇게 매트리스와 베개까지 오고, 한숨 돌리자마자그 다음날부터
+                                    본격적으로
+                                    아프기
+                                    시작했다. 구내염이 생기기 시작하더니 본격적으로 편</p>
+                                <span class="info_by"><span class="ico_by">by</span>&nbsp;백마띠 소녀</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/@@bS5q/151" class="link_slide" target="_blank">
+                                <div class="img_articles">
+                                    <img src="//img1.daumcdn.net/thumb/C240x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/bS5q/image/tAIJ-5VMidtgAwZvvYQMsdJPWfU"
+                                        width="240" alt="믹스커피 마시려고 밥 먹는 엄마">
+                                </div>
+                                <strong class="tit_subject">믹스커피 마시려고 밥 먹는 엄마</strong>
+                                <p class="desc_subject">"나는 믹스커피 마시려고 아침밥 먹는다. 밥은 먹기 싫어도 믹스커피는 먹고 싶어." 엄마의 무한한 사랑을 받고 있는
+                                    주인공은
+                                    믹스커피이다. 달달한 맛은 엄마의 모든 시름과 화병을 녹여주는 강력한 힘을 가지고 있다. 하긴 나도 카페라테를 마시려고 아침밥을 먹으니 엄마와 나는 꽤
+                                    닮았다.
+                                    예전에
+                                    스타벅스에서 여고생들의 대화를 들은 적이 있다. 아메리카노를 마</p>
+                                <span class="info_by"><span class="ico_by">by</span>&nbsp;인어수인</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/@@8ICI/235" class="link_slide" target="_blank">
+                                <div class="img_articles">
+                                    <img src="//img1.daumcdn.net/thumb/C240x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/guest/image/U2Ne5FHGKi7XsU2ru4g4rKxzAgM.JPG"
+                                        width="240" alt="어머님은 귤 가져다 먹으라 하셨어">
+                                </div>
+                                <strong class="tit_subject">어머님은 귤 가져다 먹으라 하셨어</strong>
+                                <p class="desc_subject">어머님과 나에게는 큰 차이점이 있다. 어머님은 남의 도움을 받을 수만 있다면 어떻게든 받으려시는 반면, 난 어떻게든
+                                    남의
+                                    도움을
+                                    받지
+                                    않고 살아보려는 쪽이다. 웬만하면 그냥 혼자 하시지, 굳이 사람을 불러서 도움을 받으려 하시는 어머님을 처음엔 이해하지 못했다. 나중이라고 이해가 다
+                                    되는 건
+                                    물론
+                                    아니다.
+                                    ​​ 귤을 따지 않기로 한 올해 가을, 지인에게 </p>
+                                <span class="info_by"><span class="ico_by">by</span>&nbsp;강유라</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/@@1Sma/2247" class="link_slide" target="_blank">
+                                <div class="img_articles">
+                                    <img src="//img1.daumcdn.net/thumb/C240x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1Sma/image/nAQOXM9BLsWlfbZcU1gBST62PBo.JPG"
+                                        width="240" alt="처음부터 끝판왕!">
+                                </div>
+                                <strong class="tit_subject">처음부터 끝판왕!</strong>
+                                <p class="desc_subject">처음부터 끝판왕! (여행 가서 저녁까지 일정 빡빡하게 잡아놨는데, 아침부터 너를 만나면 에라 모르겠다, 오늘 일정은
+                                    여기서
+                                    끝.)
+                                </p>
+                                <span class="info_by"><span class="ico_by">by</span>&nbsp;이용한</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="article_ctrl_left">left</button>
+                <button class="article_ctrl_right">right</button>
+            </div>
+            <!-- 페이지 상단 이동 버튼 -->
+            <a href="#" class="top">Top</a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="foot_container">
+            <!-- 상단 사이트맵 영역 -->
+            <div class="foot_map">
+                <!-- 왼쪽 슬로건과 로고 -->
+                <div class="foot_left">
+                    <span class="foot_logo"></span>
+                    <span class="foot_comment">You can make anything bywriting.</span>
+                    <span class="foot_comment_author">C.S.Lewis</span>
+                </div>
+                <!-- 우측 사이트맵 링크 -->
+                <div class="foot_right">
+                    <ul class="map_list">
+                        <li><a href="#">브런치 이용안내</a></li>
+                        <li><a href="#">작가신청</a></li>
+                        <li><a href="#">작가 지원 프로젝트</a></li>
+                        <li id="nodp">&nbsp;</li>
+                        <li><a href="#">청소년 보호정책</a></li>
+                        <li><a href="#">운영정책</a></li>
+                    </ul>
+                    <ul class="map_list">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이전 이용약관</a></li>
+                        <li><a href="#"><strong>카카오 개인정보 처리방침</strong></a></li>
+                        <li><a href="#">제휴제안</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <ul class="map_list">
+                        <li><a href="#">브런치팀 공지사항</a></li>
+                        <li><a href="#">브런치 카카오톡 채널</a></li>
+                        <li><a href="#">브런치 인스타그램</a></li>
+                        <li><a href="#">브런치 페이스북</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 카피라이트 영역 -->
+            <div class="foot_copy">
+                <a href="#" class="copy_kakao">&copy; Kakao Corp.</a>
+                <div class="down_link">
+                    <a href="#"><span class="google"></span></a>
+                    <a href="#"><span class="apple"></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="brunch.js">    </script>
+</body>
+
+</html>

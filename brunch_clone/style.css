@@ -1,0 +1,53 @@
+/**
+* @filename : style.css
+* @author : 문태호 (mun05170@gmail.com)
+* @description : 브런치 초기화 및 영역별 css import
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@300;500&display=swap");
+@import url("./reset.css");
+@import url("./slide.css");
+@import url("./keyword.css");
+@import url("./writer.css");
+@import url("./artice.css");
+@import url("./footer.css");
+@import url("./header.css");
+@import url("./sidebar.css");
+@import url("./intro.css");
+
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  color: black;
+}
+body {
+  font-family: "Noto Sans DemiLight", "Malgun Gothic", serif;
+}
+
+button {
+  border: 0 none;
+  cursor: pointer;
+  outline: none;
+}
+
+main {
+  margin-top: 60px;
+  position: relative;
+}
+
+br {
+  width: 0;
+  height: 0;
+}
+
+/* 책방 링크 영역 */
+.book_link {
+  display: block;
+  margin: 150px auto;
+  width: fit-content;
+  height: fit-content;
+}

@@ -4,12 +4,6 @@
 * @description : 배스킨라빈스 메뉴바 영역 css
 */
 
-/* 메뉴 바 초기화 */
-.menu_bar a {
-  display: block;
-  text-decoration: none;
-}
-
 /* 메뉴 바 전체 영역 설정 및 테두리 지정 */
 .menu_bar {
   width: 100%;

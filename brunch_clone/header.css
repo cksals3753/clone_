@@ -1,0 +1,80 @@
+/**
+* @filename : header.css
+* @author : 문태호 (mun05170@gmail.com)
+* @description : 브런치 헤더 영역 css
+*/
+nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 18;
+  transition: background 0.3s ease-in 0s;
+}
+
+/* 페이지 위치에 따라 상단 고정 토글 */
+.fix {
+  position: fixed;
+  z-index: 18;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #ddd;
+}
+
+/* 왼쪽 메뉴들 */
+.header_left {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* 햄버거 버튼 */
+.ham {
+  background: url("https://t1.daumcdn.net/brunch/static/img/help/pc/ico_view_cover.v4.png")
+    no-repeat;
+  background-position: 0px 0;
+  width: 27px;
+  height: 20px;
+  margin-right: 11px;
+}
+
+/* 로고(텍스트 날리기) */
+#header_logo span {
+  display: block;
+  height: 22px;
+  width: 72px;
+  background: url("./img/logo_brunch_v1.png") no-repeat;
+  background-position: 0px 0px;
+  text-indent: -10000px;
+}
+
+/* 오른쪽 메뉴들 */
+.header_right {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+}
+
+.start_btn {
+  border: 1px solid rgb(141, 141, 141);
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 11px;
+  border-radius: 50px;
+  margin-right: 11px;
+  cursor: pointer;
+}
+
+/* 돋보기모양 버튼 */
+.header_right button {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url("https://t1.daumcdn.net/brunch/static/img/help/pc/ico_view_cover.v4.png")
+    no-repeat;
+  background-position: -30px 0px;
+}

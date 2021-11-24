@@ -1,0 +1,147 @@
+/**
+* @filename : writer.css
+* @author : 문태호 (mun05170@gmail.com)
+* @description : 브런치 작가 영역 css
+*/
+
+.writer_container {
+  width: 100%;
+  padding: 150px 0 100px;
+  background-color: #fafafa;
+}
+
+/* 브런치 작가 영역 타이틀 */
+.brunch_writers {
+  width: 258px;
+  height: 13px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  background: url("./img/txt_brunch_v5_181004_v2.png") no-repeat 0 0;
+  background-position: 0 -175px;
+  text-indent: -10000px;
+}
+
+.brunch_writers2 {
+  display: block;
+  width: 84px;
+  height: 11px;
+  margin: 15px auto 0;
+  background: url("./img/txt_brunch_v5_181004_v2.png") no-repeat 0 0;
+  background-position: -270px -70px;
+  text-indent: -10000px;
+}
+
+/* 작가 패널 컨트롤 영역 */
+.writers_pannel_ctrl {
+  margin: 40px auto 50px auto;
+  width: 230px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 작가 패널 컨트롤 버튼 */
+.writers_pannel_btn {
+  display: block;
+  border: 1px solid #eee;
+  padding: 6px 16px;
+  border-radius: 40px;
+  background-color: #fff;
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+}
+
+/* 작가 패널 컨트롤.active 토글 */
+.writers_pannel_btn.active {
+  color: #00c6bd;
+  border-color: #00c6bd;
+}
+
+/* 작가 패널 영역 */
+.writers_pannel {
+  width: 960px;
+  margin: 0 auto;
+  height: fit-content;
+}
+
+.list_writers {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list_writers li {
+  margin-bottom: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.link_writers {
+  width: 230px;
+  height: 290px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 작가 프로필 사진 */
+.link_writers > img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* 작가 프로필 */
+.tit_wirter {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.team_writer {
+  font-weight: 300;
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.txt_wirter {
+  font-weight: 300;
+  color: #959595;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+
+/* 작가 프로필 키워드 */
+.writer_keyword {
+  position: absolute;
+  bottom: 45px;
+}
+
+.writer_keyword button {
+  font-weight: 300;
+  border: 1px solid #ddd;
+  padding: 4px 10px;
+  border-radius: 40px;
+  background-color: #fff;
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+}
+
+.writer_keyword button:last-child {
+  background: url("./img/ico_brunch_v8_181004_v2.png") no-repeat 0 0;
+  background-position: -280px -70px;
+  text-indent: -10000px;
+  width: 35px;
+  height: 28px;
+  padding: 0;
+  border: none;
+}

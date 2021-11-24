@@ -1,0 +1,263 @@
+/**
+* @filename : slide.css
+* @author : 문태호 (mun05170@gmail.com)
+* @description : 브런치 슬라이드 영역 css
+*/
+
+/* 슬라이드 전체 영역 */
+.slide_container {
+  width: 100%;
+  position: relative;
+}
+
+/* 슬라이드 이미지 전체 영역(넘치는 부분 자르기) */
+.slide_area {
+  height: 520px;
+  overflow: hidden;
+}
+
+/* 슬라이드 페이지 영역 설정 */
+.slide_page {
+  height: 100%;
+  width: 960px;
+  margin: auto;
+  overflow: visible;
+  position: relative;
+}
+
+/* 가로로 나열될 ul 설정. 트렌지션 설정(left값으로 페이지 이동) */
+.list_slide {
+  transition: left 0.3s;
+  left: 0;
+  height: 100%;
+  width: 900%;
+  display: flex;
+  position: absolute;
+}
+
+/* 슬라이드 페이지 내용 부분 */
+.slide {
+  width: 960px;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+/* 마우스오버시 이미지 넘치는 부분 가리기 */
+.slide a {
+  overflow: hidden;
+}
+
+/* 그리드 된 내부에서 이미지 맞춤. */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 좌우 그리드 2분할 */
+.div2 {
+  width: 50%;
+  height: 100%;
+}
+
+/* 좌우 그리드 3분할 */
+.div3 {
+  width: 320px;
+  height: 100%;
+}
+
+/* 세로 그리드 2분할 */
+.updown {
+  display: block;
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+/* 세로 그리드 분할 없음 */
+.full {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* 이미지 위 텍스트 영역 */
+.slide_txt_box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.slide_txt {
+  text-align: center;
+  font-weight: 400;
+  width: 200px;
+}
+
+.div3 .slide_txt {
+  width: 224px;
+}
+
+.slide_title {
+  padding-top: 12px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  font-family: "Nanum Myeongjo", sans-serif;
+  color: #fff;
+}
+
+.slide_author {
+  padding-top: 30px;
+  font-size: 12px;
+  font-family: "Noto Sans Light", sans-serif;
+  color: #fff;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide_by {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin-top: 3px;
+  background: url("./img/ico_brunch_v8_181004_v2.png") no-repeat 0 0;
+  background-position: -38px -130px;
+  text-indent: -10000px;
+  margin-right: 3px;
+}
+
+/* 슬라이드 화살표 */
+.slide_ctrl_left {
+  display: block;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-indent: -10000px;
+  background: url("./img/ico_brunch_v8_181004_v2.png") no-repeat 0 0;
+  background-position: -167px -175px;
+}
+.slide_ctrl_right {
+  display: block;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  text-indent: -10000px;
+  background: url("./img/ico_brunch_v8_181004_v2.png") no-repeat 0 0;
+  background-position: -269px -175px;
+}
+
+/* 슬라이드 네비게이션 버튼 영역 */
+.slide_page_nav {
+  margin: 10px auto 0 auto;
+  width: 960px;
+  text-align: center;
+}
+
+.slide_page_nav button {
+  color: rgb(153, 153, 153);
+  margin: 0px 8px;
+  font-size: 10px;
+  background-color: #fff;
+}
+
+/* 슬라이드 네비게이션 버튼 이미지 처리 */
+.active0 {
+  display: inline-block;
+  height: 12px;
+  width: 13px;
+  text-indent: -10000px;
+  background-image: url("./img/img_paging.v2.png");
+  background-position: 0 -10px;
+}
+.active1 {
+  display: inline-block;
+  height: 12px;
+  width: 13px;
+  text-indent: -10000px;
+  background-image: url("./img/img_paging.v2.png");
+  background-position: -20px -10px;
+}
+.active2 {
+  display: inline-block;
+  height: 12px;
+  width: 13px;
+  text-indent: -10000px;
+  background-image: url("./img/img_paging.v2.png");
+  background-position: -40px -10px;
+}
+.active3 {
+  display: inline-block;
+  height: 12px;
+  width: 13px;
+  text-indent: -10000px;
+  background-image: url("./img/img_paging.v2.png");
+  background-position: -60px -10px;
+}
+.active4 {
+  display: inline-block;
+  height: 12px;
+  width: 13px;
+  text-indent: -10000px;
+  background-image: url("./img/img_paging.v2.png");
+  background-position: -80px -10px;
+}
+.active5 {
+  display: inline-block;
+  height: 12px;
+  width: 13px;
+  text-indent: -10000px;
+  background-image: url("./img/img_paging.v2.png");
+  background-position: -100px -10px;
+}
+.active6 {
+  display: inline-block;
+  height: 12px;
+  width: 13px;
+  text-indent: -10000px;
+  background-image: url("./img/img_paging.v2.png");
+  background-position: -120px -10px;
+}
+.active7 {
+  display: inline-block;
+  height: 12px;
+  width: 13px;
+  text-indent: -10000px;
+  background-image: url("./img/img_paging.v2.png");
+  background-position: -140px -10px;
+}
+.active8 {
+  display: inline-block;
+  height: 12px;
+  width: 13px;
+  text-indent: -10000px;
+  background-image: url("./img/img_paging.v2.png");
+  background-position: -160px -10px;
+}
+.active9 {
+  display: inline-block;
+  height: 12px;
+  width: 13px;
+  text-indent: -10000px;
+  background-image: url("./img/img_paging.v2.png");
+  background-position: -180px -10px;
+}
