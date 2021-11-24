@@ -55,16 +55,19 @@ window.addEventListener("scroll", (e) => {
   }
 });
 
+// 이미지 슬라이드 기능 구현
 const eventSlide = document.querySelector(".event_slide_list");
 const eventSlides = document.querySelectorAll(".event_slide");
 const eventSlideCtrlBtns = document.querySelectorAll(".event_ctrl_btn");
 
 let eventSlideNum = 0;
 
+// 페이지넘버에 맞는 위치로 이동
 function eventSlideChange() {
   eventSlide.style.left = eventSlideNum * -1220 + "px";
 }
 
+// 버튼 클릭시 버튼 active클래스 활성화
 function eventSlideBtnHandler() {
   for (let btn of eventSlideCtrlBtns) {
     btn.classList = "event_ctrl_btn";
@@ -75,6 +78,7 @@ function eventSlideBtnHandler() {
   eventSlideChange();
 }
 
+// 개별 버튼에 클릭시 페이지 넘버 지정 이벤트 부여
 for (let btn of eventSlideCtrlBtns) {
   btn.addEventListener("click", (e) => {
     console.log(parseInt(e.currentTarget.dataset.page));
