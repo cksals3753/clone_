@@ -1,0 +1,84 @@
+/**
+* @filename : gram.css
+* @author : 전찬민 (cksals37530@gmail.com)
+* @description : 배스킨라빈스 footer 영역 css
+*/
+
+/* 배경 top 줄 */
+#footer {
+    border-top: 1px solid #feaf2b;
+    text-align: center;
+    text-decoration-line: none;
+}
+/* txt div 간격 */
+.footer_txt {
+    padding: 20px 0;
+}
+/* 글자 스타일 */
+.footer_txt span > a { 
+    color: #483834;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+/* 5번째 글자 색 변경 */
+.footer_txt .color > a {
+    color: #ff7c98;
+}
+
+
+/* 해피포인트 div */
+.footer_happy {
+    background-color: #f9f8f7;
+    padding: 20px 0;
+}
+/* 이미지 간 간격 */
+.happy span img {
+    margin: 0 30px;
+}
+/* 4,5,6 이미지 margin 제거 */
+.happy .btn img {
+    margin: 0;
+}
+.drop_site {
+    margin-left: 40px;
+}
+/* drop다운 버튼 */
+#subject {
+    color: #b1ab9f;
+    border: 1px solid #d1cecc;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 11px;
+    padding: 4px 10px;
+    margin-left: 740px;
+}
+
+/* 베라 로고 */
+.footer_logo {
+    padding: 50px 0;
+}
+.footer_logo_img {
+    cursor: pointer;
+}
+/* text 글자 스타일 */
+.footer_tel {
+    font-size: 11px;
+    color: #635b56;
+    text-align: center;
+    background-position: center center;
+    position: absolute;
+    line-height: 11px;
+}
+.tel {
+    position: relative;
+    display: block;
+    margin-left: 400px;
+}
+.tel p {
+    float: left;
+    position: relative;
+    padding: 8px;
+}
