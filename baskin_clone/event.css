@@ -1,0 +1,111 @@
+/**
+* @filename : event.css
+* @author : 문태호 (mun05170@gmail.com)
+* @description : 배스킨라빈스 이벤트 영역 css
+*/
+
+a {
+  text-decoration: none;
+}
+
+/* 이벤트 영역 전체 레이아웃 */
+.event_container {
+  width: 100%;
+  height: 650px;
+}
+
+/* 이벤트 타이틀 */
+.event_title {
+  display: block;
+  font-size: 17px;
+  color: #2f231c;
+  font-weight: bold;
+  margin: 78px auto 60px;
+  text-align: center;
+}
+
+/* 이벤트 슬라이드 보이는 영역 */
+.event_slide_area {
+  width: 1220px;
+  height: 460px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 이벤트 슬라이드 전체 리스트 */
+.event_slide_list {
+  position: absolute;
+  display: flex;
+  left: 0;
+  transition: left 0.4s ease;
+}
+
+/* 개별 리스트 */
+.event_slide {
+  width: 289px;
+  margin: 0 8px;
+}
+
+/* 개별 리스트 레이아웃 */
+.event_slide a img:nth-child(2) {
+  margin-top: 22px;
+  margin-bottom: 12px;
+}
+
+.event_slide a p {
+  color: #2f231c;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: bold;
+  font-family: "나눔바른고딕";
+}
+
+.event_slide .pop {
+  margin-top: 11px;
+  font-weight: 300;
+  color: #948780;
+  font-size: 13px;
+}
+
+/* 이벤트 슬라이드 컨트롤러 레이아웃 */
+.event_ctrl {
+  width: 80px;
+  height: 16px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.event_ctrl_btn {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+  background-color: #cdccd5;
+}
+
+.event_ctrl_btn:nth-child(1) {
+  left: 3px;
+}
+.event_ctrl_btn:nth-child(2) {
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.event_ctrl_btn:nth-child(3) {
+  right: 3px;
+}
+
+.event_ctrl_btn:hover {
+  width: 9px;
+  height: 9px;
+  background-color: #301d17;
+}
+
+.event_ctrl_btn.active {
+  width: 9px;
+  height: 9px;
+  background-color: #301d17;
+}
