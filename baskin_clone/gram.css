@@ -11,19 +11,20 @@
     margin-bottom: 100px;
 }
 .board {
-    width: 80%;
+    width: 1150px;
     display: block;
     position: relative;
     text-align: center;
     background-position: center center;
     overflow: hidden;
-    margin-left: 150px;
+    margin: 0 auto;
 }
 /* 이미지 박스 줄 */
 .image_board1 {
     text-align: center;
     float:left;
-    width:100%;
+    width: 1150px;
+    margin: 0 auto;
     position: relative;
 }
 /* 이미지 크기 지정 */

@@ -1,3 +1,8 @@
+/**
+* @filename : starbucks.css
+* @author : 전찬민 (cksals37530@gmail.com)
+* @description : 스타벅스 전 영역 css
+*/
 /** Float 처리 클래스 */
 .pull-left { float: left; }
 .pull-right { float: right; }
@@ -45,12 +50,11 @@
 .menu1 {
     background: #f5f0f0;
     height: 50px;
-    width: 100%;
+    width: 1100px;
     position: absolute;
 }
-.menu2 {
-    width: 100%;
-    background-color: #333;
+.top_menu {
+    width: 1100px;
 }
 .main {
     width: 100%;
@@ -93,8 +97,9 @@
     position: absolute;
     top: 50px;
     left: 0;
-    width: 100%;
+    width: 1300px;
     display: none;
+    background-color: #333;
 }
 /* 서브 항목 */
 .menu1 .sub {
@@ -105,6 +110,7 @@
     width: 100%;
     background-color: #333;
 }
+
 /* 드롭다운 배경 */
 .sub li {
     background-color: #333;
@@ -125,6 +131,7 @@
 .sub > li > a {
     color: #999;
     font-size: 12px;
+    line-height: 12px;
     text-decoration-line: none;
 }
 /* 각 항목 마우스 오버 시 */
@@ -277,6 +284,7 @@
     left: -100px;
     top: -6px;
     cursor: pointer;
+    z-index: 100;
 }
 /* 이미지 슬라이드 */
 .slide {
@@ -320,7 +328,7 @@
     bottom: 10%;
     transform: translateX(-50%);
 }
-  
+/* 슬라이드 이미지 */
 .dot>li {
     float: left;
     width: 25px;
@@ -346,7 +354,7 @@
     transform: translateY(-50%);
     left: 10%;
     cursor: pointer;
-  }
+}
 /* 다음 버튼 */
 .next {
     position: absolute;
@@ -357,7 +365,16 @@
     transform: translateY(-50%);
     right: 10%;
     cursor: pointer;
-  }
+}
+/* 화살표 원 모양 만들기 */
+.prev, .next {
+    border: 2px solid #222;
+    border-radius: 28px;
+}
+/* 화살표 위치 조정 */
+.prev img, .next img {
+    margin-top: 10px;
+}
 /* ------------------------------------------------------------------------- */
 /* 리워드 */
 /* 리워드 배경색 및 크기 지정 */

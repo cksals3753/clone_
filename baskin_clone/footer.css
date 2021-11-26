@@ -42,9 +42,6 @@
 .happy .btn img {
     margin: 0;
 }
-.drop_site {
-    margin-left: 40px;
-}
 /* drop다운 버튼 */
 #subject {
     color: #b1ab9f;
@@ -53,7 +50,9 @@
     height: 30px;
     font-size: 11px;
     padding: 4px 10px;
-    margin-left: 740px;
+    margin-left: 760px;
+    position: relative;
+    top: -30px;
 }
 
 /* 베라 로고 */
@@ -71,14 +70,29 @@
     background-position: center center;
     position: absolute;
     line-height: 11px;
+    width: 1200px;
 }
+/* text 위치 */
 .tel {
     position: relative;
     display: block;
     margin-left: 400px;
+    height: 30px;
+    text-align: center;
 }
 .tel p {
     float: left;
     position: relative;
     padding: 8px;
+}
+/* 전화번호 text */
+.tel2 {
+    margin-left: 570px;
+}
+/* copyright text */
+.tel3 {
+    margin-left: 550px
+}
+.tel3 p {
+    color: #b1adab;
 }

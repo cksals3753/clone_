@@ -1,8 +1,8 @@
-
-/* 페이지 실행 후 자동 실행 */
-$(document).ready(function() {
-  slide();
-});
+/**
+* @filename : starbucks.js
+* @author : 전찬민 (cksals37530@gmail.com)
+* @description : 스타벅스 전 영역 js
+*/
 
 /* 공지사항 텍스트 회전 */
 const notiLi = document.querySelectorAll("#notiContainer span:nth-child(2) p");
@@ -22,7 +22,7 @@ var promotionBtn = "true";
 const page = document.querySelector("#slide_border");
 
 eventBox.addEventListener("click", function(e) {
-        
+
   if(promotionBtn == "false") {
     promotionBtn = "true";
     e.currentTarget.innerHTML = '<img src="img/btn_prom_down.png"/>';
@@ -35,6 +35,10 @@ eventBox.addEventListener("click", function(e) {
     }
 });
 
+/* 페이지 실행 후 자동 실행 */
+$(document).ready(function() {
+  slide();
+});
 
 // 슬라이드 
 function slide() {
