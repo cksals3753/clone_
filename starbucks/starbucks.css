@@ -59,12 +59,12 @@
   position: absolute;
   display: flex;
   justify-content: right;
+  mr
 }
 
 .main {
   width: 1100px;
   background-color: #f5f0f0;
-  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -96,25 +96,23 @@
 .menu1 .menu2 {
   position: absolute;
   top: 50px;
-  left: -391px;
-  width: 101vw;
+  left: 0;
+  width: 100%;
   height: 500px;
   display: none;
   background-color: #333;
 }
 
-/* .menu1 .menu2:nth-child(2) {
-  display: block;
-} */
-
 /* 서브 항목 */
 .menu_sub {
   width: 100%;
+  height: fit-content;
   background-color: #333;
 }
 
 .menu_sub_inner {
   width: 1100px;
+  height: fit-content;
   margin: auto;
   display: flex;
   justify-content: left;
@@ -123,13 +121,14 @@
 
 .menu1 .sub {
   float: left;
+  height: fit-content;
   width: 220px;
 }
 
 /* 드롭다운 배경 */
 .sub li {
   background-color: #333;
-  height: 30px;
+  height: 22px;
   text-align: left;
   word-wrap: normal;
 }
@@ -778,16 +777,16 @@
 }
 /* 매장찾기 버튼 */
 .store_btn {
+  margin-left: 750px;
+  float: left;
   border: 2px solid #222;
   border-radius: 3px;
   height: 34px;
   line-height: 34px;
-  position: absolute;
-  right: 472px;
-  top: 258px;
   width: 121px;
   z-index: 4;
   text-align: center;
+  margin-top: 30px;
 }
 .store_btn > a {
   transition: background-color 0.7s, color 0.7s;
@@ -868,14 +867,6 @@
   display: block;
   width: fit-content;
 }
-/* 3,4,5번째 이미지 크기 조정 */
-/* .footer_award_img > ul > li:nth-child(3) {
-  padding-right: 20px;
-}
-.footer_award_img > ul > li:nth-child(4),
-.footer_award_img > ul > li:nth-child(5) {
-  padding-right: 80px;
-} */
 /* ------------------------------------------------------- */
 /* 찾아오시는길 etc */
 /* 위치 및 배경 색 & 폰트 지정 */

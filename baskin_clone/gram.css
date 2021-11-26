@@ -6,36 +6,48 @@
 
 /* 이미지 박스 전체 */
 #image_board {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 100px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
 }
 .board {
-    width: 1150px;
-    display: block;
-    position: relative;
-    text-align: center;
-    background-position: center center;
-    overflow: hidden;
-    margin: 0 auto;
+  width: 1150px;
+  margin: 0 auto;
+  height: 750px;
 }
 /* 이미지 박스 줄 */
 .image_board1 {
-    text-align: center;
-    float:left;
-    width: 1150px;
-    margin: 0 auto;
-    position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -3px;
 }
 /* 이미지 크기 지정 */
+.image_board1 > span {
+  display: block;
+  width: 20%;
+  float: left;
+  padding: 2px;
+}
+
 .image_board1 > span > img {
-    width:19%;
-    height: 215px;
-    margin: 1px;
-    float:left;
-    position: relative;
+  width: 100%;
+  height: 215px;
 }
 /* 텍스트 이미지 사이 간격 */
 .gram {
-    padding: 50px 0;
+  padding: 50px 0;
+}
+
+.dash {
+  width: 100%;
+  border-top: 2px solid #dcd7d1;
+  position: relative;
+}
+
+.dash img {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
