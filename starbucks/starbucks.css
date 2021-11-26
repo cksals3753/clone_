@@ -4,852 +4,934 @@
 * @description : 스타벅스 전 영역 css
 */
 /** Float 처리 클래스 */
-.pull-left { float: left; }
-.pull-right { float: right; }
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
 .claerfix:after {
-    content:'';
-    display: block;
-    clear: both;
-    float: none;
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
 }
 
 /** 로고 배경색 */
 #header {
-    background-color: #f5f0f0;
-    position: fixed;
-    width: 100%;
-    height: 120px;
-    z-index: 100;
+  background-color: #f5f0f0;
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  z-index: 100;
 }
 /** 로고 이미지 위치 조정 */
 #header .logo {
-    position: relative;
-    top: 20px;
-    left: 110px;
+  position: relative;
+  top: 20px;
+  left: 110px;
+  z-index: 2;
 }
 /* 회원가입 및 메뉴들 위치 크기 정의 */
 #header .sign {
-    margin-right: 40px;
-    position: relative;
-    top: -80px;
-    right: 100px;
+  margin-right: 40px;
+  position: relative;
+  top: -80px;
+  right: 100px;
 }
 /* sign태그 폰트크기 지정 */
 #header .sign > span {
-    padding: 15px;
-    border-right: 0.5px solid #d5d5d5;
-    font-size: 13px;
+  padding: 15px;
+  border-right: 0.5px solid #d5d5d5;
+  font-size: 13px;
 }
 /* 마지막 요소 오른쪽 선 없애기 */
 #header .sign > span:last-child {
-    border: none;
+  border: none;
 }
 /* ------------------------------------------------------------------------ */
 /* 메뉴 바 */
 /* 배경 설정 */
 .menu1 {
-    background: #f5f0f0;
-    height: 50px;
-    width: 1100px;
-    position: absolute;
+  background: #f5f0f0;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: right;
 }
-.top_menu {
-    width: 1100px;
-}
+
 .main {
-    width: 100%;
-    background-color: #333;
+  width: 1100px;
+  background-color: #f5f0f0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
-/* float 처리 */
-.menu1 .main {
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    float: right;
-}
+
 /* 메뉴 정렬 */
 .menu1 > .main > .main_tit {
-    float: left;
-    width: 16.6%;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background: #f5f0f0;
-    font-size: 13px;
-
+  width: 16.6%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #f5f0f0;
+  font-size: 13px;
 }
 /* 제목에 마우스 오버시 */
 .menu1 .main > .main_tit:hover .menu2 {
-    display: block;
+  display: block;
 }
 /* 제목에 마우스 오버 시 */
 .menu1 .main > .main_tit > a:hover {
-    background-color: #333;
-    color: #669900;
+  background-color: #333;
+  color: #669900;
 }
 /* 제목 텍스트 스타일 */
 .menu1 .main > .main_tit > a {
-    display: block;
-    text-decoration-line: none;
-    color: #333;
+  display: block;
+  text-decoration-line: none;
+  color: #333;
 }
 .menu1 .menu2 {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 1300px;
-    display: none;
-    background-color: #333;
+  position: absolute;
+  top: 50px;
+  left: -391px;
+  width: 101vw;
+  height: 500px;
+  display: none;
+  background-color: #333;
 }
+
+/* .menu1 .menu2:nth-child(2) {
+  display: block;
+} */
+
 /* 서브 항목 */
-.menu1 .sub {
-    float: left;
-    width: 20%;
-}
 .menu_sub {
-    width: 100%;
-    background-color: #333;
+  width: 100%;
+  background-color: #333;
+}
+
+.menu_sub_inner {
+  width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.menu1 .sub {
+  float: left;
+  width: 220px;
 }
 
 /* 드롭다운 배경 */
 .sub li {
-    background-color: #333;
-    height: 30px;
+  background-color: #333;
+  height: 30px;
+  text-align: left;
+  word-wrap: normal;
 }
 /* 드롭다운에 오버시 배경 */
 .menu1 .sub li a:hover {
-    background-color: #333;
-    display: inline-block;
+  background-color: #333;
+  display: inline-block;
 }
 /* 서브 제목 */
 .sub > .sub_tit > a {
-    color: #fff;
-    font-size: 14px;
-    text-decoration-line: none;
+  color: #fff;
+  font-size: 14px;
+  text-decoration-line: none;
 }
 /* 서브 제목 안에 내용 */
 .sub > li > a {
-    color: #999;
-    font-size: 12px;
-    line-height: 12px;
-    text-decoration-line: none;
+  color: #999;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration-line: none;
 }
 /* 각 항목 마우스 오버 시 */
 .sub > li > a:hover {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 /* 텍스트 라인 배경 */
 .sub_txt {
-    background-image: url(img/gnb_sub_txbg.jpg);
-    display: inline-block;
-    width: 100%;
+  background-image: url(img/gnb_sub_txbg.jpg);
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 101vw;
+  height: fit-content;
+  padding: 30px 0;
 }
 /* 텍스트 작은 제목 */
 .sub_txt_inner {
-    width: 1100px;
-    margin: auto;
-    text-align: left;
+  width: 1100px;
+  margin: auto;
+  text-align: left;
 }
 /* 텍스트 제목 설명 */
-.sub_txt_inner > h3 > a {
-    color: #999;
-    text-decoration-line: none;
-    font-size: 12px;
-    height: 18px;
+.sub_txt_inner > h3 {
+  line-height: 12px;
 }
-.sub_txt_inner > p  {
-    color: #64a70b;
-    font-size: 12px;
-    height: 18px;
-    padding-bottom: 10px;
+
+.sub_txt_inner > h3 > a {
+  color: #999;
+  text-decoration-line: none;
+  font-size: 12px;
+  display: block;
+  padding-bottom: 3px;
+}
+.sub_txt_inner > p {
+  color: #64a70b;
+  font-size: 12px;
+  line-height: 12px;
+  padding-bottom: 3px;
 }
 /*------------------------------------------------------------------------- */
 /* container 위치 및 크기 */
 #container {
-    padding-top: 120px;
-    width: 100%;
-    height: 670px;
+  padding-top: 120px;
+  width: 100%;
+  height: 646px;
+  position: relative;
 }
 .center {
-    padding: 40px;
+  width: 100%;
+  height: 646px;
 }
+
+.center_inner {
+  width: 1080px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+
 .sideimg {
-    display: block;
+  position: fixed;
+  right: 50px;
+  top: 150px;
+  z-index: 1000;
 }
 /* 커피 이미지 위치 조정 */
 .center > .nut {
-    position: relative;
-    bottom: -200px;
-    right: -50px;
-    z-index: 1;
+  position: relative;
+  bottom: -200px;
+  right: -50px;
+  z-index: 1;
 }
 .center > .ccino {
-    position: relative;
-    bottom: -100px;
-    z-index: 1;
+  position: relative;
+  bottom: -100px;
+  z-index: 1;
 }
 /* 리본 이미지 위치 조정 */
-.center > .right {
-    position: relative;
-    right: -360px;
-    top: -40px;
+.center_inner > .ribon_right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.center > .left {
-    position: relative;
-    top: -121px;
+.center_inner > .ribon_left {
+  position: absolute;
+  bottom: 0;
+  left: 1px;
 }
+
+.center_drink {
+  position: absolute;
+  left: 472px;
+  bottom: 69px;
+  z-index: 1;
+}
+
+.center_drink img:first-child {
+  position: relative;
+}
+
+.center_drink img:nth-child(2) {
+  position: absolute;
+  top: 194px;
+  left: -150px;
+}
+
+.center_drink img:nth-child(3) {
+  position: absolute;
+  top: 141px;
+  right: -152px;
+}
+
+.carry {
+  position: absolute;
+  top: 55px;
+  left: 0px;
+}
+
 /* 버튼 위치 및 색상 크기*/
 .btn {
-    display: block;
+  position: absolute;
+  top: 217px;
+  left: 100px;
+  z-index: 5;
 }
 .btn > button {
-    position: relative;
-    top: -320px;
-    left: -860px;
-    background-color: #d1131d;
-    padding: 10px 30px;
-    border: 2px solid white;   
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color .5s;
+  background-color: #d1131d;
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
 }
 /* 버튼에 밑줄 지우기 및 글자색상 */
 .btn > button > a {
-    text-decoration-line: none;
-    color: white;
-    display: block;
+  text-decoration-line: none;
+  color: white;
+  display: block;
 }
 /* 버튼에 마우스 올렸을 시 */
 .btn > button:hover {
-    text-decoration-line: underline;
-    background-color: rgb(196, 196, 196);
+  text-decoration-line: underline;
+  background-color: rgb(196, 196, 196);
 }
 /* ----------------------------------------------------------------------- */
 /* 공지사항 및 프로모션 */
 /* 공지사항 */
 #notiContainer {
-    width: 100%;
-    display: block;
-    position: absolute;
-    background-image: url(img/reserve_bg_pc.png);
-    background-image: linear-gradient(to right, #111 55%, #f5f4ef 45%);
+  width: 100%;
+  display: flex;
+  height: 65px;
+  background-image: url(img/reserve_bg_pc.png);
+  background-image: linear-gradient(to right, #111 55%, #f5f4ef 45%);
 }
 /* float 처리 */
 .notice {
-    float: left;
-    position: relative;
+  width: 55%;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 /* 공지사항 텍스트 */
 .notice > span > .noti_front {
-    color: white;
-    font-size: 16px;
-    padding-right: 20px;
-    margin-top: 14px;
-    top: 2px;
+  color: white;
+  font-size: 16px;
+  padding-left: 200px;
 }
 /* 텍스트 글자 */
 .notice > span > p {
-    color: white;
-    text-decoration-line: none;
-    font-size: 13px;
-    position: relative;
-    left: 180px;
-    top: 20px;
+  color: white;
+  text-decoration-line: none;
+  font-size: 13px;
+  margin-left: 20px;
 }
 /* 플러스 이미지 */
-.notice > span > img {
-    position: relative;
-    left: 340px;
-    top: 4px
+.notice img {
+  position: absolute;
+  right: 20px;
 }
 /* 프로모션 */
 .promotion {
-    position: relative;
-    float: right;
+  width: 45%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* 프로모션 텍스트 */
 .promotion > p {
-    font-size: 16px;
-    color: #666;
-    font-weight: bold;
-    float: left;
-    position: relative;
-    left: -300px;
-    top: 20px;
+  font-size: 16px;
+  color: #666;
+  font-weight: bold;
+  padding-right: 66px;
 }
 /* 다운 버튼 */
 .promotion #promBtn > img {
-    float: left;
-    position: relative;
-    left: -100px;
-    top: -6px;
-    cursor: pointer;
-    z-index: 100;
+  cursor: pointer;
+  z-index: 100;
 }
 /* 이미지 슬라이드 */
 .slide {
-    position: relative;
-    padding-top: 50px;
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
-  }
+  position: relative;
+  padding-top: 50px;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
 /* 이미지 부분 총 width */
 .panel {
-    width: 400%;
+  width: 400%;
 }
-/* float 처리 */  
+/* float 처리 */
 .panel:after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 /* 이미지 */
-.panel>li {
-    width: 25%;
-    height: 600px;
-    float: left;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: relative;
-    text-align: center;
+.panel > li {
+  width: 25%;
+  height: 600px;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  text-align: center;
 }
-  
+
 /* float 처리 */
 .dot:after {
-    content: "";
-    display: block;
-    clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
-/* 슬라이드 버튼 */  
+/* 슬라이드 버튼 */
 .dot {
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
 }
 /* 슬라이드 이미지 */
-.dot>li {
-    float: left;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #fff;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-indent: -9999px;
-    cursor: pointer;
+.dot > li {
+  float: left;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-indent: -9999px;
+  cursor: pointer;
 }
-  
-.dot>li.on {
-    background-color: #342f2f;
+
+.dot > li.on {
+  background-color: #342f2f;
 }
-/* 이전 버튼 */  
+/* 이전 버튼 */
 .prev {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10%;
-    cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  cursor: pointer;
 }
 /* 다음 버튼 */
 .next {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10%;
-    cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+  cursor: pointer;
 }
 /* 화살표 원 모양 만들기 */
-.prev, .next {
-    border: 2px solid #222;
-    border-radius: 28px;
+.prev,
+.next {
+  border: 2px solid #222;
+  border-radius: 28px;
 }
 /* 화살표 위치 조정 */
-.prev img, .next img {
-    margin-top: 10px;
+.prev img,
+.next img {
+  margin-top: 10px;
 }
 /* ------------------------------------------------------------------------- */
 /* 리워드 */
 /* 리워드 배경색 및 크기 지정 */
 #reward {
-    background-color: #1e3932;
-    position: absolute;
-    width: 100%;
-    height: 240px;
-    color: white;
-    margin-top: 50px;
+  background-color: #1e3932;
+  width: 100%;
+  height: 170px;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
+
+.reward_bg {
+  width: 1080px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
 /* 사진 위치 조정 */
 .reward_logo {
-    margin-left: 160px;
-    padding: 20px;
+  float: left;
+  margin: 0 40px;
+  text-align: center;
 }
-.reward_logo img {
-    float: left;
-    position: relative;
-}
+
 .reward_cont {
-    position: relative;
+  width: 810px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-/* div크기 지정 */
-.cont {
-    padding: 15px;
+
+.cont_txt {
+  width: 100%;
+  padding-bottom: 14px;
+  position: relative;
 }
 /* 로그인 / 회원가입 버튼 */
 .btn_in {
-    position: absolute;
-    right: 190px;
-    top: 55px;
-    display: inline-block;
-    box-sizing: border-box;
+  position: absolute;
+  right: 0px;
+  top: 38px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 .btn_in > .btn-join {
-    color: #fff;
-    padding: 8px 18.5px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #00704a;
-    border: 2px solid #00704a;
-    text-decoration-line: none;
+  color: #fff;
+  padding: 8px 18.5px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00704a;
+  border: 2px solid #00704a;
+  text-decoration-line: none;
 }
 /* 버튼 마우스 오버 시 */
-.btn_in > .btn-join:hover, .btn_in > .btn-login:hover {
-    text-decoration-line: underline;
+.btn_in > .btn-join:hover,
+.btn_in > .btn-login:hover {
+  text-decoration-line: underline;
 }
 .btn_in > .btn-login {
-    padding: 8px 18.5px;
-    font-size: 14px;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 2px solid white;
-    text-decoration-line: none;
+  padding: 8px 18.5px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  text-decoration-line: none;
 }
 /* 가입 텍스트 크기 지정 */
 .cont_txt h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 .cont_txt p {
-    font-size: 16px;
+  font-size: 16px;
 }
 /* 기프트 텍스트 및 선 */
 .gift {
-    padding: 15px;
-    border-top: 1px solid #4b615b;
+  padding-top: 25px;
+  border-top: 1px solid #4b615b;
+  position: relative;
 }
 .gift_txt > p {
-    font-size: 13px;
+  font-size: 14px;
 }
 /* 선물하기 버튼 */
 .btn_egift {
-    position: absolute;
-    right: 190px;
-    top: 130px;
-    display: inline-block;
-    box-sizing: border-box;
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 .btn_egift > a {
-    padding: 8px 18.5px;
-    font-size: 14px;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 2px solid white;
-    text-decoration-line: none;
+  padding: 8px 18.5px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  text-decoration-line: none;
 }
 /* 버튼 마우스 오버 시 */
 .btn_egift > a:hover {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 /* -------------------------------------------------------------------- */
 /* 첫번째 pink이미지 */
 /* 첫번째 이미지 위치 및 배경 지정 */
 #merry {
-    margin-top: 290px;
-    position: absolute;
-    width: 100%;
-    background-color: #ff9ba1;
-    background-image: url(img/2021_christmas_bean_bg.jpg);
+  width: 100%;
+  height: 577px;
+  background-color: #ff9ba1;
+  background-image: url(img/2021_christmas_bean_bg.jpg);
 }
 .pink {
-    margin-left: 200px;
+  margin-left: 200px;
 }
 /* 커피 이미지 위치 조정 */
 .pink_img > img {
-    position: relative;
-    float: left;
-    padding-top: 60px;
+  float: left;
+  padding-top: 60px;
 }
 /* 폰트 이미지 위치 지정 */
 .pink_txt {
-    position: relative;
-    padding-top: 200px;
+  padding-top: 200px;
 }
 /* 자세히 보기 위치 및 폰트 지정 */
 .pink_txt > .pink_a {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 .pink_txt > .pink_a > a {
-    padding: 8px 18.5px;
-    font-size: 14px;
-    color: #453d3d;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 2px solid #453d3d;
-    text-decoration-line: none;
-    transition: background-color .7s, color .7s;
+  padding: 8px 18.5px;
+  font-size: 14px;
+  color: #453d3d;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #453d3d;
+  text-decoration-line: none;
+  transition: background-color 0.7s, color 0.7s;
 }
 /* 버튼 마우스 오버 시 */
 .pink_txt > .pink_a > a:hover {
-    background-color: #453d3d;
-    color: white;
-    text-decoration-line: underline;
+  background-color: #453d3d;
+  color: white;
+  text-decoration-line: underline;
 }
 /* ------------------------------------------------------------------ */
 /* 두번째 green 이미지 */
 /* 크기 및 배경이미지 지정 */
 #merry2 {
-    position: absolute;
-    margin-top: 772px;
-    width: 100%;
-    height: 400px;
-    background-image: url(img/reserve_christmas_bean_2110181.jpg);
+  width: 100%;
+  height: 400px;
+  background-image: url(img/reserve_christmas_bean_2110181.jpg);
 }
 /* 글자 이미지 위치 조정 */
 .green_img > img {
-    margin: 120px 100px;
+  margin: 120px 100px;
 }
-/* 자세히 보기 버튼 */   
+/* 자세히 보기 버튼 */
 .green_img > a {
-    display: block;
-    margin: 0 auto;
-    width: 125px;
-    height: 100%;
-    color: #d5a012;
-    font-size: 15px;
-    line-height: 34px;
-    text-align: center;
-    border: 2px solid #d5a012;
-    border-radius: 5px;
-    box-sizing: border-box;
-    position: relative;
-    top: -120px;
-    left: -140px;
-    text-decoration-line: none;
-    transition: background-color .7s, color .7s;
+  display: block;
+  margin: 0 auto;
+  width: 125px;
+  height: 100%;
+  color: #d5a012;
+  font-size: 15px;
+  line-height: 34px;
+  text-align: center;
+  border: 2px solid #d5a012;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: relative;
+  top: -120px;
+  left: -140px;
+  text-decoration-line: none;
+  transition: background-color 0.7s, color 0.7s;
 }
 /* 버튼 마우스 오버 시 */
 .green_img > a:hover {
-    background-color: #d5a012;
-    color: white;
-    text-decoration-line: underline;
+  background-color: #d5a012;
+  color: white;
+  text-decoration-line: underline;
 }
 /* ------------------------------------------------------------------ */
 /* 3번째 favorite 이미지 */
 /* 배경 및 위치 조정  */
 #merry3 {
-    width: 100%;
-    height: 860px;
-    position: absolute;
-    margin-top: 1170px;
-    background-image: url(img/fav_prod_bg_new1.jpg)
+  width: 100%;
+  height: 860px;
+  background-image: url(img/fav_prod_bg_new1.jpg);
 }
 /* 텍스트 이미지 위치 조정 */
 .favorite {
-    margin-left: 200px;
-    margin-top: 180px;
-    position: relative;
-    float: left;
+  margin-left: 200px;
+  margin-top: 180px;
+  position: relative;
+  float: left;
 }
 .favorite_img {
-    padding: 20px;
+  padding: 20px;
 }
 .favorite_img2 {
-    margin-left: -90px;
-    padding: 20px;
+  margin-left: -90px;
+  padding: 20px;
 }
 /* 케이크 이미지 float 처리 */
 .favorite_cake {
-    position: relative;
-    float: left;
-    margin-left: 130px;
-    margin-top: 90px;
+  position: relative;
+  float: left;
+  margin-left: 130px;
+  margin-top: 90px;
 }
 /* 자세히 보기 버튼 */
 .favorite_a {
-    border: 2px solid #fff;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 34px;
-    width: 120px;
-    margin-left: 160px;
-    margin-top: 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 34px;
+  width: 120px;
+  margin-left: 160px;
+  margin-top: 20px;
 }
 .favorite_a > a {
-    display: block;
-    font-size: 15px;
-    color: #fff;
-    box-sizing: border-box;
-    text-decoration-line: none;
-    transition: background-color .7s, color .7s;
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  box-sizing: border-box;
+  text-decoration-line: none;
+  transition: background-color 0.7s, color 0.7s;
 }
 /* 버튼 마우스 오버 시 */
 .favorite_a > a:hover {
-    background-color: white;
-    color: #000;
-    text-decoration-line: underline;
+  background-color: white;
+  color: #000;
+  text-decoration-line: underline;
 }
 /* --------------------------------------------------------------------- */
-/* 리저브 메거진 */ 
+/* 리저브 메거진 */
 #reserve {
-    margin-top: 2070px;
-    width: 100%;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-image: url(img/reserve_bg_pc2.png);
+  background-size: cover;
+  background-position: 0 40px;
+  background-repeat: no-repeat;
 }
 /* 배경 이미지 지정 */
 .reserve_bg {
-    height: 350px;
-    background-image: url(img/reserve_bg_pc2.png);
-    position: absolute;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 /* 텍스트 이미지 */
 .reserve_txt {
-    position: relative;
-    margin-left: 100px;
-    margin-top: 80px;
-    padding: 20px;
-    padding-right: 60px;
+  margin-left: 257px;
+  margin-top: 126px;
 }
 /* 사람 이미지 */
 .reserve_visual {
-    margin-top: -40px;
+  position: absolute;
+  top: 0;
+  right: 280px;
 }
 /* 버튼 위치 및 색깔 */
 .reserve_txt > a {
-    display: block;
-    margin: 0 auto;
-    width: 125px;
-    color: #000;
-    font-size: 15px;
-    line-height: 34px;
-    text-align: center;
-    border: 2px solid #000;
-    border-radius: 5px;
-    box-sizing: border-box;
-    transition: background-color .7s, color .7s;
-    text-decoration-line: none;
-    margin-top: 25px;
+  display: block;
+  margin: 0 auto;
+  width: 125px;
+  color: #000;
+  font-size: 15px;
+  line-height: 34px;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: background-color 0.7s, color 0.7s;
+  text-decoration-line: none;
+  margin-top: 25px;
 }
 /* 버튼 마우스 오버 시 */
 .reserve_txt > a:hover {
-    background-color: black;
-    color: white;
-    text-decoration-line: underline;
+  background-color: black;
+  color: white;
+  text-decoration-line: underline;
 }
 /* --------------------------------------------------------- */
 /* store 메뉴 */
 #store {
-    position: absolute;
-    margin-top: 400px;
-    width: 100%;
-    height: 410px;
-    background-color: #d5d5d5;
-    overflow: hidden;
+  width: 100%;
+  height: 410px;
+  background-color: #d5d5d5;
+  overflow: hidden;
 }
 
 /* 이미지 float 처리 */
-.store_bg_img1 , .store_bg_img2, .store_bg_img3, .store_bg_img4 {
-    position: relative;
-    float: left;
+.store_bg_img1,
+.store_bg_img2,
+.store_bg_img3,
+.store_bg_img4 {
+  position: relative;
+  float: left;
 }
 /* 이미지 위치 조정 */
 .store_bg_img1 {
-    margin-left: 180px;
-    z-index: 4;
+  margin-left: 180px;
+  z-index: 4;
 }
 .store_bg_img2 {
-    margin-top: 160px;
-    margin-left: -190px;
-    z-index: 7;
+  margin-top: 160px;
+  margin-left: -190px;
+  z-index: 7;
 }
 .store_bg_img3 {
-    margin-top: -60px;
+  margin-top: -60px;
 }
 .store_bg_img4 {
-    z-index: 5;
-    left: 1050px;
-    top: -200px;
+  z-index: 5;
+  left: 1050px;
+  top: -200px;
 }
 /* 텍스트 이미지 */
 .store_txt {
-    position: relative;
-    top: -270px;
+  position: relative;
+  top: -270px;
 }
-.store_bg_txt1, .store_bg_txt2 {
-    margin-left: 750px;
-    float: left;
+.store_bg_txt1,
+.store_bg_txt2 {
+  margin-left: 750px;
+  float: left;
 }
 /* 매장찾기 버튼 */
 .store_btn {
-    border: 2px solid #222;
-    border-radius: 3px;
-    height: 34px;
-    line-height: 34px;
-    position: absolute;
-    right: 472px;
-    top: 258px;
-    width: 121px;
-    z-index: 4;
-    text-align: center;
+  border: 2px solid #222;
+  border-radius: 3px;
+  height: 34px;
+  line-height: 34px;
+  position: absolute;
+  right: 472px;
+  top: 258px;
+  width: 121px;
+  z-index: 4;
+  text-align: center;
 }
 .store_btn > a {
-    transition: background-color .7s, color .7s;
-    text-decoration-line: none;
-    color: #222;
-    display: block;
+  transition: background-color 0.7s, color 0.7s;
+  text-decoration-line: none;
+  color: #222;
+  display: block;
 }
 /* 버튼 마우스 오버 시 */
 .store_btn > a:hover {
-    background-color: #222;
-    color: #fff;
-    text-decoration-line: underline;
+  background-color: #222;
+  color: #fff;
+  text-decoration-line: underline;
 }
 /* ----------------------------------------------------------------------- */
 /* footer */
 /* 배경 및 포지션 지정 */
 #footer {
-    position: absolute;
-    width: 100%;
-    margin-top: 810px;
-    background-color: #2C2A29;
-    display: inline-block;
+  width: 100%;
+  height: 300px;
+  background-color: #2c2a29;
+  display: inline-block;
 }
 /* 텍스트 위치 조정 */
 .footer_menu {
-    margin-left: 80px;
-    margin-top: 40px;
+  margin-left: 80px;
+  margin-top: 40px;
 }
 /* float 처리 */
 .footer_menu > ul {
-    float: left;
-    position: relative;
-    width: 16.6%
+  float: left;
+  height: 100%;
+  position: relative;
+  width: 16.6%;
 }
 /* 텍스트 밑줄 및 색 */
 .footer_menu > ul > li > a {
-    color: white;
-    text-decoration-line: none;
+  color: white;
+  text-decoration-line: none;
 }
 /* 줄 마다 간격 */
 .footer_menu > ul > li {
-    font-size: 12px;
-    padding-bottom: 8px;
+  font-size: 12px;
+  padding-bottom: 8px;
 }
 /* 각 제목들에게 폰트 설정 */
 .footer_menu > ul > li:first-child {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 .footer_menu_title > a {
-    font-weight: bold;
+  font-weight: bold;
 }
 /* 스타벅스 로고 위치 조정 */
 .footer_menu > ul > li > img {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 /* -------------------------------------------------------------------- */
-/* award 부문 */ 
+/* award 부문 */
 /* award 부문 위치 조정 */
 #footer_award {
-    background-color: #282828;
-    width: 100%;
-    position: absolute;
-    margin-top: 959px;
-    padding-bottom: 40px;
+  background-color: #282828;
+  width: 100%;
+  height: 60px;
 }
 /* 수상내역 크기 조정 */
-.footer_award_img {
-    padding-top: 20px;
-    margin-left: 100px;
+#footer_award > ul {
+  display: block;
+  margin: auto;
+  width: fit-content;
+  padding-top: 5px;
+  margin-top: -2px;
 }
-.footer_award_img > ul > li {
-    position: relative;
-    width: 158px;
-    margin-right: 8px;
+#footer_award > ul > li {
+  position: relative;
+  margin-right: 8px;
+}
+
+#footer_award > ul > li > a {
+  display: block;
+  width: fit-content;
 }
 /* 3,4,5번째 이미지 크기 조정 */
-.footer_award_img > ul > li:nth-child(3) {
-    padding-right: 20px;
+/* .footer_award_img > ul > li:nth-child(3) {
+  padding-right: 20px;
 }
 .footer_award_img > ul > li:nth-child(4),
 .footer_award_img > ul > li:nth-child(5) {
-    padding-right: 80px;
-}
+  padding-right: 80px;
+} */
 /* ------------------------------------------------------- */
 /* 찾아오시는길 etc */
 /* 위치 및 배경 색 & 폰트 지정 */
 #copyright {
-    margin-top: 1060px;
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    background-color: #2C2A29;
-    padding-top: 40px;
-    text-align: center;
-    font-size: 12px;
+  width: 100%;
+  height: 150px;
+  background-color: #2c2a29;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 12px;
 }
 /* a 태그 밑줄 지우기 */
 .copy > a {
-    text-decoration-line: none;
+  text-decoration-line: none;
 }
 /* 첫 a 태그 텍스트 */
 .copy .mbm {
-    color: #00b050;
-    font-weight: bold;
-    border-right: 1px solid #393939;
-    padding: 0 8px;
+  color: #00b050;
+  font-weight: bold;
+  border-right: 1px solid #393939;
+  padding: 0 8px;
 }
 /* 나머지 a 태그 */
 .copy .mbn {
-    color: #ccc;
-    border-right: 1px solid #393939;
-    padding: 0 8px;
+  color: #ccc;
+  border-right: 1px solid #393939;
+  padding: 0 8px;
 }
 /* 버튼 태그 */
 .copy .btned_link {
-    border: 2px solid #fff;
-    border-radius: 3px;
-    color: #fff;
-    display: inline-block;
-    font-size: 12px;
-    margin: 10px 2px 0 3px;
-    padding: 0 10px;
-    width: 90px;
-    height: 30px;
-    line-height: 30px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px 2px 0 3px;
+  padding: 0 10px;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
 }
 /* 버튼에 마우스 오버시 */
 .copy .btned_link:hover {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 /* 사업자 등록 메뉴 */
 .copy_menu {
-    width: 100%;
-    color: #999;
+  width: 100%;
+  color: #999;
 }
 /* 각 항목 정렬 */
 .copy_menu > li {
-    display:inline-block;
-    padding: 26px 0;
+  display: inline-block;
+  padding: 26px 0;
 }
 /* 마지막 폰트 색깔 */
 .en {
-    color: #999;
+  color: #999;
 }
