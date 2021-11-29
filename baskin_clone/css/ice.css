@@ -1,0 +1,25 @@
+/**
+* @filename : ice.css
+* @author : 전찬민 (cksals37530@gmail.com)
+* @description : 배스킨라빈스 아이스크림 메뉴 영역 css
+*/
+
+/* 아이스크림 메뉴 */
+.ice {
+  background-image: url(../img/bg_menu.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  text-align: center;
+}
+
+/* 메뉴 소제목 */
+.ice > h1 {
+  font-weight: bolder;
+  padding: 50px;
+  font-size: 18px;
+}
+/* 메뉴 이미지 */
+.ice > .cream:hover {
+  cursor: pointer;
+}

@@ -46,15 +46,6 @@ slideRight.addEventListener("click", () => slideNumHandler(1));
 slideBtnHandle();
 setInterval(() => slideNumHandler(1), 3000);
 
-// 스크롤을 내리면 팝업 배너의 height = 0 으로 변환
-window.addEventListener("scroll", (e) => {
-  const scrollY = window.scrollY || document.documentElement.scrollTop;
-  const popup = document.querySelector(".popup_img");
-  if (scrollY > 185) {
-    popup.style.height = "0px";
-  }
-});
-
 // 이미지 슬라이드 기능 구현
 const eventSlide = document.querySelector(".event_slide_list");
 const eventSlides = document.querySelectorAll(".event_slide");
@@ -81,7 +72,6 @@ function eventSlideBtnHandler() {
 // 개별 버튼에 클릭시 페이지 넘버 지정 이벤트 부여
 for (let btn of eventSlideCtrlBtns) {
   btn.addEventListener("click", (e) => {
-    console.log(parseInt(e.currentTarget.dataset.page));
     eventSlideNum = parseInt(e.currentTarget.dataset.page);
     eventSlideBtnHandler();
   });

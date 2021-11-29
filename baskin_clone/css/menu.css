@@ -39,7 +39,7 @@
 .menu_left a {
   width: 35px;
   height: 46px;
-  background: url("./img/gnb_menu.png") no-repeat;
+  background: url("../img/gnb_menu.png") no-repeat;
   text-indent: -9999em;
 }
 
@@ -97,7 +97,7 @@
   position: absolute;
   width: 195px;
   height: 139px;
-  background: url("./img/img_happypoint_app.jpg") no-repeat 0 0;
+  background: url("../img/img_happypoint_app.jpg") no-repeat 0 0;
 }
 
 .nav_dep2_ul {

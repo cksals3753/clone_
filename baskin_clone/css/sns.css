@@ -1,0 +1,19 @@
+/**
+* @filename : sns.css
+* @author : 전찬민 (cksals37530@gmail.com)
+* @description : 배스킨라빈스 sns 영역 css
+*/
+
+/* sns */
+.sns {
+  text-align: center;
+  padding-top: 20px;
+}
+/* sns 텍스트 간격 */
+.sns p {
+  padding-bottom: 20px;
+}
+/* sns 이미지 사이 간격 */
+.sns > img {
+  margin: 10px 10px;
+}

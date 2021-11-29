@@ -8,7 +8,7 @@ header {
   width: 100%;
   border-top: 3px solid #ff7c98;
   border-bottom: 1px solid #3f291a;
-  background: url("./img/bg_header.gif") 50% 0 repeat-x;
+  background: url("../img/bg_header.gif") 50% 0 repeat-x;
 }
 
 /* 헤더 초기화 */
